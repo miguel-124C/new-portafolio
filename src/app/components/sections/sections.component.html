@@ -1,0 +1,12 @@
+<div class="contain">
+    <div class="card" 
+    *ngFor="let section of sections; let i = index"
+        (mousemove)="showModal(i)" 
+        (mouseout)="ocultarModal(i)">
+        <img [src]="'assets/'+section.img" alt="">
+        <div
+        [ngClass]="{'modal': cardSelect == i}"> 
+            {{  section.title }}
+        </div>
+    </div>
+</div>
