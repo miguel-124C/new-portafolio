@@ -11,13 +11,4 @@ export class SectionsComponent {
   @Input()
   public sections?: Sections[];
 
-  public displayModal: boolean = false;
-  public cardSelect?: number;
-
-  showModal(i: number){
-    this.cardSelect = i;
-  }
-  ocultarModal(i: number){
-    this.cardSelect = -1;
-  }
 }

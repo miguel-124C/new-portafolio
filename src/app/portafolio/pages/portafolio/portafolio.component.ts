@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Proyecto } from '../../interfaces/proyectos.interface';
+import { GalleriaResponsiveOptions } from 'primeng/galleria';
+import { Imagen } from '../../interfaces/imagen.interface';
 
 @Component({
   selector: 'app-portafolio',
@@ -7,79 +8,69 @@ import { Proyecto } from '../../interfaces/proyectos.interface';
   styleUrls: ['./portafolio.component.css']
 })
 export class PortafolioComponent {
-  public proyectos: Proyecto[] = [
+
+  public images: Imagen[] = [
     {
-      name: 'relojApp',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-clock',
-      status: 'Reloj App',
-      image: '1.png',
-      href: 'https://miguel-124c.github.io/CRUD-Reloj'
+      itemImageSrc:'assets/img/1.png',
+      thumbnailImageSrc: 'assets/img/1.png',
+      alt: `Creado inicialmente sin ningun framework. Optimizado con Angular.
+          Tiene las funcionalidades de todo reloj: cuenta con cronometro, temporizador, reloj, y alarmas.
+          Hice propiamente un crud para la parte de alarmas`,
+      title:'RelojApp',
+      href:'https://miguel-124c.github.io/cronometro/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Reloj Rgb',
-      image: '2.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/2.png',
+      thumbnailImageSrc: 'assets/img/2.png',
+      alt: `Tiene un bonito efecto al cambiar de colores cada cierto tiempo, hecho solamente con html, css y js 
+          `,
+      title:'RelojRgb',
+      href:'https://miguel-124c.github.io/Reloj/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Juego',
-      image: '3.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/3.png',
+      thumbnailImageSrc: 'assets/img/3.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/Memoriza-la-cancion/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Sudoku',
-      image: '4.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/4.png',
+      thumbnailImageSrc: 'assets/img/4.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/Sudoku/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Peliculas',
-      image: '5.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/5.png',
+      thumbnailImageSrc: 'assets/img/5.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/Info-Movies/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Añadir Tares',
-      image: '6.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/6.png',
+      thumbnailImageSrc: 'assets/img/6.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/CRUD-Lista-de-tareas/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Calendario',
-      image: '7.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/7.png',
+      thumbnailImageSrc: 'assets/img/7.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/Calendario-Object-Date-/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Encriptador',
-      image: '8.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/8.png',
+      thumbnailImageSrc: 'assets/img/8.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/Encriptador-Alura/'
     },{
-      name: 'relojRgb',
-      color: 'red',
-      date: '22/10/2002',
-      icon: 'pi pi-github',
-      status: 'Datos Del Tiempo',
-      image: '9.png',
-      href: 'https://miguel-124c.github.io/Reloj/'
+      itemImageSrc:'assets/img/9.png',
+      thumbnailImageSrc: 'assets/img/9.png',
+      alt: 'algo',
+      title:'title',
+      href:'https://miguel-124c.github.io/datosMeteorologicas/'
     }
   ]
+
+  public responsiveOptions: GalleriaResponsiveOptions[] = [
+    {breakpoint:'',numVisible:5}
+  ];
 }

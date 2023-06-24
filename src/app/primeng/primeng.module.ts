@@ -6,7 +6,8 @@ import { GalleriaModule } from 'primeng/galleria';
 import { TimelineModule } from 'primeng/timeline';
 import { DividerModule } from 'primeng/divider';
 import { ChipModule } from 'primeng/chip';
-import { SkeletonModule } from 'primeng/skeleton';
+import { PanelModule } from 'primeng/panel';
+import { SliderModule } from 'primeng/slider';
 
 @NgModule({
   exports: [
@@ -17,7 +18,8 @@ import { SkeletonModule } from 'primeng/skeleton';
     TimelineModule,
     DividerModule,
     ChipModule,
-    SkeletonModule,
+    PanelModule,
+    SliderModule,
   ]
 })
 export class PrimengModule { }

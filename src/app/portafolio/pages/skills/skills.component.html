@@ -1,45 +1,14 @@
 
-<div class="border-round border-1 surface-border p-4 surface-card">
-    <ul class="m-0 p-0 list-none">
-        <li class="mb-3">
-            <div class="flex">
-                <p-skeleton shape="circle" size="4rem" styleClass="mr-2"></p-skeleton>
-                <div style="flex: 1">
-                    <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
-                    <p-skeleton width="75%"></p-skeleton>
-                </div>
+
+<div class="containSkills">
+    <div *ngFor="let skill of skills" class="skill">
+        <p-divider 
+        align="left">
+            <div class="flex align-items-center gap-2">
+                <i [class]="'fa-brands '+skill.icon"></i>
+                <b> {{ skill.skill }} </b>
             </div>
-        </li>
-        <li class="mb-3">
-            <div class="flex">
-                <p-skeleton shape="circle" size="4rem" styleClass="mr-2"></p-skeleton>
-                <div style="flex: 1">
-                    <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
-                    <p-skeleton width="75%"></p-skeleton>
-                </div>
-            </div>
-        </li>
-        <li class="mb-3">
-            <div class="flex">
-                <p-skeleton shape="circle" size="4rem" styleClass="mr-2"></p-skeleton>
-                <div style="flex: 1">
-                    <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
-                    <p-skeleton width="75%"></p-skeleton>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="flex">
-                <p-skeleton shape="circle" size="4rem" styleClass="mr-2"></p-skeleton>
-                <div style="flex: 1">
-                    <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
-                    <p-skeleton width="75%"></p-skeleton>
-                </div>
-            </div>
-        </li>
-    </ul>
+        </p-divider>
+        <p-slider [(ngModel)]="skill.percent"></p-slider>
+    </div>
 </div>
-
-
-
-

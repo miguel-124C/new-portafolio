@@ -1,39 +1,34 @@
-<div>
 
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ratione debitis culpa. Assumenda earum eveniet iste sapiente quas sed, odit a ipsa ullam quod, tempora tempore. Ipsam tempora aperiam voluptatum?
+<h1 class="text-6xl">Proyectos</h1>
+
+<div class="containGallery">
+
+    <p-galleria 
+        [value]="images" 
+        [showIndicatorsOnItem]="false"
+        [showIndicators]="true" 
+        [showThumbnails]="false" 
+        [responsiveOptions]="responsiveOptions" 
+        [containerStyle]="{ 'max-width': '500px' }">
+
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" style="width: 500px; display: block; height: 500px;" />
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+            <h4 style="margin-bottom: .5rem; color: #ffffff;">{{ item.title }}</h4>
+            <p class="mb-2">{{ item.alt }}</p>
+
+            <a [href]="item.href" target="_blank">
+                <p-button label="Preview" styleClass="p-button-info p-button-text">
+                </p-button>
+            </a>
+        </ng-template>
+    </p-galleria>
 </div>
 
-<div class="">
-    <p-timeline [value]="proyectos" align="alternate"
-    styleClass="customized-timeline">
-        <ng-template pTemplate="marker" let-event>
-            <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
-                <i [ngClass]="event.icon"></i>
-            </span>
-        </ng-template>
-        <ng-template pTemplate="content" let-event>
-            <p-card [header]="event.status" [subheader]="event.date">
-                <img *ngIf="event.image" [src]="'assets/img/' + event.image" [alt]="event.name" width="200px" height="250px" class="shadow-2" />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-                    neque quas!
-                </p>
-                <a target="_blank"
-                [href]="event.href">
-                    <button pButton 
-                    label="Read more" class="p-button-text">
-                        
-                    </button>        
-                </a>
-            </p-card>
-        </ng-template>
-    </p-timeline>
+
+<h1 class="text-6xl">Experiencia</h1>
+
+<div class="containGallery">
+
 </div>
