@@ -1,11 +1,35 @@
-<!-- <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '250px' }">
-    <ng-template pTemplate="header">
-        <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
-    </ng-template>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-        quas!
-    </p>
-</p-card> -->
+<header>
+    <h1>Miguel Angel Cuellar Serrudo<br>fasdfsadf</h1>
+    <p-button label="Conocer más" class=""
+    styleClass="p-button-text p-button-warning">
+    </p-button>
 
-<portafolio-main></portafolio-main>
+    <ul class="ul-redes">
+        <li>
+            <a href="https://github.com/miguel-124C" target="_blank">
+                <p-chip [style]="{background: '#dba03a',color:'#000'}"
+                label="GitHub" icon="pi pi-github">
+                </p-chip>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/miguel-cuellar-013a96258/" target="_blank">
+                <p-chip [style]="{background: '#dba03a',color:'#000'}"
+                label="LinkEdin" icon="pi pi-linkedin">
+                </p-chip>
+            </a>
+        </li>
+    </ul>
+</header>
+
+
+<nav class="nav">
+    <app-sections [style]="{height: '100%'}"
+        [sections]="sections"></app-sections>
+</nav>
+
+<div class="sections">
+    <!-- <app-about-me></app-about-me> -->
+    <router-outlet></router-outlet>
+    
+</div>

@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './components/header/header.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { MainComponent } from './pages/main/main.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { PrimengModule } from '../primeng/primeng.module';
-import { SectionsComponent } from '../components/sections/sections.component';
+import { PortafolioRoutingModule } from './portafolio-routing.module';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    NavigationComponent,
-    MainComponent,
-    SectionsComponent,
-  ],exports:[
-    MainComponent,
+    AboutMeComponent,
+    PortafolioComponent,
+    SkillsComponent,
+  ],exports: [
+    AboutMeComponent,
+    PortafolioComponent,
   ],
   imports: [
     CommonModule,
     PrimengModule,
+    PortafolioRoutingModule
   ]
 })
 export class PortafolioModule { }

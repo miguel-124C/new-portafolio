@@ -2,7 +2,8 @@
     <div class="card" 
     *ngFor="let section of sections; let i = index"
         (mousemove)="showModal(i)" 
-        (mouseout)="ocultarModal(i)">
+        (mouseout)="ocultarModal(i)"
+        [routerLink]="section.title | lowercase">
         <img [src]="'assets/'+section.img" alt="">
         <div
         [ngClass]="{'modal': cardSelect == i}"> 
