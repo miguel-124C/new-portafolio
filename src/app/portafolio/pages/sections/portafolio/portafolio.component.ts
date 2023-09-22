@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { GalleriaResponsiveOptions } from 'primeng/galleria';
-import { Imagen } from '../../interfaces/imagen.interface';
+import { Imagen } from 'src/app/portafolio/interfaces/imagen.interface';
 
 @Component({
   selector: 'app-portafolio',

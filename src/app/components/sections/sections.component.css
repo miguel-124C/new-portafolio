@@ -8,7 +8,6 @@
 .card{
     width: 32%;
     height: 80%;
-    background-color: green;
     position: relative;
     cursor: pointer;
     border-radius: 10px;

@@ -12,7 +12,6 @@ import { SectionsComponent } from './components/sections/sections.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SectionsComponent,
   ],
   imports: [
     BrowserModule,

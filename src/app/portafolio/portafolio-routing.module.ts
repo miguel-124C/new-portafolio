@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PortafolioComponent } from './pages/portafolio/portafolio.component';
-import { AboutMeComponent } from './pages/about-me/about-me.component';
-import { SkillsComponent } from './pages/skills/skills.component';
+import { HomeComponent } from './pages/home-page/home.component';
 
 const routes: Routes = [
     {
-        path:'portafolio',
-        component: PortafolioComponent
+        path: '',
+        component: HomeComponent
     },{
-        path:'skills',
-        component: SkillsComponent
-    },{
-        path:'about-me',
-        component: AboutMeComponent
+        path:'sections',
+        loadChildren: ()=> import('./pages/sections/sections.module').then(m => m.SectionsModule)
     },{
         path:'**',
         redirectTo:'',

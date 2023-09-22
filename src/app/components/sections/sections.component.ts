@@ -8,7 +8,17 @@ import { Sections } from 'src/app/portafolio/interfaces/sections.interface';
 })
 export class SectionsComponent {
   
-  @Input()
-  public sections?: Sections[];
+  public sections: Sections[] = [
+    {
+      title: 'About-me',
+      img: 'about-me.jpeg'
+    },{
+      title: 'Skills',
+      img: 'services.jpeg'
+    },{
+      title: 'Portafolio',
+      img: 'portafolio.jpeg'
+    }
+  ];
 
 }

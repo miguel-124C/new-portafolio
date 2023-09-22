@@ -1,7 +1,7 @@
 <div class="contain">
     <div class="card" 
     *ngFor="let section of sections; let i = index"
-        [routerLink]="section.title | lowercase">
+        [routerLink]="'sections/'+section.title | lowercase">
         <img [src]="'assets/'+section.img" alt="">
         <div class="modal"> 
             {{  section.title }}

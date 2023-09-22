@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Skill } from '../../interfaces/skill.interface';
+import { Skill } from 'src/app/portafolio/interfaces/skill.interface';
 
 @Component({
   selector: 'app-skills',
@@ -7,22 +7,23 @@ import { Skill } from '../../interfaces/skill.interface';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
+
   public skills: Skill[] = [
     {
       skill:'Html',
-      percent: 90,
+      percent: 95,
       icon: 'fa-html5'
     },{
       skill:'Css',
-      percent: 80,
+      percent: 85,
       icon: 'fa-css3-alt'
     },{
       skill:'JavaScript',
-      percent: 70,
+      percent: 75,
       icon: 'fa-square-js'
     },{
       skill:'Angular',
-      percent: 60,
+      percent: 70,
       icon: 'fa-angular'
     },{
       skill:'GitHub',
