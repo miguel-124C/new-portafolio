@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Sections } from 'src/app/portafolio/interfaces/sections.interface';
+import { Sections } from 'src/app/interfaces/sections.interface';
 
 @Component({
   selector: 'app-sections',

@@ -1,0 +1,21 @@
+<header>
+
+    <h1>
+        <p-button label="Miguel Angel Cuellar Serrudo" [style]="{'font-size': '1.2em'}"
+        styleClass="p-button-outlined p-button-primary">
+        </p-button>
+    </h1>
+
+    <img src="assets/img/perfil.jpg" alt="foto de perfil" title="Miguel">
+
+    <ul class="ul-redes">
+        <li *ngFor="let red of redes">
+            <a [href]="red.href" target="_blank">
+                <p-chip
+                [label]="red.name" [icon]="red.icon">
+                </p-chip>
+            </a>
+        </li>
+    </ul>
+
+</header>

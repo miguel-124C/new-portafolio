@@ -1,0 +1,21 @@
+
+<div class="containSkills">
+
+    <p-timeline [value]="skills" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-skill>
+            <span class="custom-marker shadow-2" [style.backgroundColor]="skill.color">
+                <i [ngClass]="skill.icon"></i>
+            </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-event>
+            <p-card [header]="event.status" [subheader]="event.skill" class="contain-card">
+                <img *ngIf="event.image" [src]="event.image" [alt]="event.name" width="200" class="shadow-2" />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
+                    neque quas!
+                </p>
+                <button pButton label="Read more" class="p-button-text"></button>
+            </p-card>
+        </ng-template>
+    </p-timeline>
+</div>

@@ -8,6 +8,9 @@ import { DividerModule } from 'primeng/divider';
 import { ChipModule } from 'primeng/chip';
 import { PanelModule } from 'primeng/panel';
 import { SliderModule } from 'primeng/slider';
+import { CarouselModule } from 'primeng/carousel';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   exports: [
@@ -20,6 +23,9 @@ import { SliderModule } from 'primeng/slider';
     ChipModule,
     PanelModule,
     SliderModule,
+    CarouselModule,
+    TabMenuModule,
+    MenubarModule,
   ]
 })
 export class PrimengModule { }

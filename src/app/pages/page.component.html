@@ -1,0 +1,19 @@
+<div class="contain">
+    <nav (window:resize)="cambiarMenu()">
+
+        <p-tabMenu *ngIf="!banderaMenu"
+        [model]="items"></p-tabMenu>
+    
+        <p-menubar *ngIf="banderaMenu"
+         [model]="items" [style]="{width: '100vw'}"></p-menubar>
+    
+    </nav>
+    
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+
+    <footer>
+        footer
+    </footer>
+</div>

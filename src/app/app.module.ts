@@ -4,9 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PortafolioModule } from './portafolio/portafolio.module';
 import { PrimengModule } from './primeng/primeng.module';
-import { SectionsComponent } from './components/sections/sections.component';
 
 
 @NgModule({
@@ -17,8 +15,7 @@ import { SectionsComponent } from './components/sections/sections.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    PrimengModule,
-    PortafolioModule,
+    PrimengModule
   ],
   providers: [],
   bootstrap: [AppComponent]
