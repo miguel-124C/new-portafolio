@@ -19,7 +19,7 @@ export class HomeComponent {
       icon: 'pi pi-linkedin'
     },{
       name: 'Gmail',
-      href: '',
+      href: 'mailto:mikicuellar20@gmail.com',
       icon: 'fa-solid fa-envelope'
     }
   ];
