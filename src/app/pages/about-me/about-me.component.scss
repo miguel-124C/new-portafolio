@@ -1,6 +1,21 @@
 
 .contenido{
-    height: 500px;
-    padding-top : var(--width-nav-bar);
-    background-image: url('../../../assets/img/fondo4.gif');
+    min-height: 100vh;
+    padding : var(--width-nav-bar) 10px;
+    background: var(--black-500);
+
+    .contain-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media screen and ( max-width: 920px ) {
+    .contenido{
+        .contain-cards{
+            grid-template-columns: 1fr;
+        }
+    }
 }
