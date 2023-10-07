@@ -12,11 +12,12 @@
     --blue-800:#204887;
     --blue-900:#183462;
 
-    --black-600: #111;
-    --black-500: #222;
     --black-400: #333;
+    --black-500: #222;
+    --black-600: #111;
+    --black-700: #000;
 
-    --weight-nav-bar: 70px;
+    --width-nav-bar: 70px;
 }
 
 *{
@@ -24,6 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 body {
     font-family: var(--font-family);

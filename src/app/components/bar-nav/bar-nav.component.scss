@@ -1,9 +1,13 @@
 .container{
-    height: var(--weight-nav-bar);
-    background: var(--black-500);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: var(--width-nav-bar);
+    background: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: #ffffff;
 
     .list-contain{
@@ -30,22 +34,6 @@
             color: var(--blue-400);
             border: 1px solid var(--blue-400);
             font-weight: 600;
-        }
-    }
-
-    .links{
-        padding: 5px 10px;
-        display: flex;
-        color: var(--blue-400);
-        gap: 10px;
-
-        a{
-            color: var(--blue-400);
-        }
-        
-        a:hover{
-            background: var(--black-400);
-            border-radius: 10px;
         }
     }
 }

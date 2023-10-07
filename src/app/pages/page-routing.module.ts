@@ -26,7 +26,10 @@ const routes: Routes = [
         component: SkillsComponent
       }
     ]
-  },
+  },{
+    path: '**',
+    redirectTo: ''
+  }
 ];
 
 @NgModule({

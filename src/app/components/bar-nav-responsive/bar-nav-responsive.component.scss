@@ -1,14 +1,16 @@
 .contain{
-    position: relative;
-    background: var(--black-500);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 
     div{
-        height: var(--weight-nav-bar);
+        height: var(--width-nav-bar);
         display: flex;
         align-items: center;
         padding-left: 10px;
         i{
             cursor: pointer;
+            color: white;
         }    
     }
 

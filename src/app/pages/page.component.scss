@@ -1,17 +1,6 @@
 .contain{
     position: relative;
 
-    nav{    
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-    }
-
-    div{
-        margin-top: var(--weight-nav-bar);
-    }
-
     footer{
         height: 200px;
     }

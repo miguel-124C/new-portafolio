@@ -1,4 +1,5 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem, PrimeNGConfig } from 'primeng/api';
 import { Observable, of, pipe } from 'rxjs';
 
@@ -13,11 +14,21 @@ export class PageComponent implements OnInit {
   public widthWindow!: number;
   banderaMenu: boolean = false;
 
-  constructor(private primengConfig: PrimeNGConfig) {}  
+  constructor(
+    private primengConfig: PrimeNGConfig,
+    private router: Router
+  ) {}
   
   ngOnInit() {
       this.primengConfig.ripple = true;
       this.cambiarMenu();
+      this.goToHome();
+  }
+
+  goToHome(){
+    if (this.router.url == '/') {
+      this.router.navigate(['/home']);
+    }
   }
 
   cambiarMenu(): void{    

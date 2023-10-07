@@ -1,0 +1,35 @@
+.contain{
+    display: flex;
+    gap: 5px;
+
+    .chips{
+        padding: 0 5px;
+        border-radius: 5px;
+        border: 1px solid var(--blue-400);
+        background: var(--black-400);
+
+        a{
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+    }
+
+    .chips:hover{
+        background: var(--black-600);
+    }
+}
+
+@media screen and ( max-width : 400px) {
+    .contain{
+        gap: 2px;
+        
+        .chips{
+            padding: 0 2px;
+    
+            p{
+                font-size: .7rem;
+            }
+        }
+    }
+}

@@ -1,21 +1,19 @@
 <header>
 
-    <h1>
-        <p-button label="Miguel Angel Cuellar Serrudo" [style]="{'font-size': '1.2em'}"
-        styleClass="p-button-outlined p-button-primary">
-        </p-button>
-    </h1>
+    <div class="data">
+        <h1>
+            Miguel Angel Cuellar Serrudo
+        </h1>
+        <div class="text">
+            <div class="first">Desarrollador de Software</div>
+            <div class="last">Front-End Developer</div>
+        </div>
+    </div>
 
-    <img src="assets/img/perfil.jpg" alt="foto de perfil" title="Miguel">
+    <img class="profile" src="assets/img/perfil.jpg" alt="foto de perfil" title="Miguel">
 
     <ul class="ul-redes">
-        <li *ngFor="let red of redes">
-            <a [href]="red.href" target="_blank">
-                <p-chip
-                [label]="red.name" [icon]="red.icon">
-                </p-chip>
-            </a>
-        </li>
+        <c-chips [chipsItem]="redes"></c-chips>
     </ul>
 
 </header>

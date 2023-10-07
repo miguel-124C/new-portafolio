@@ -5,7 +5,7 @@ import { Carousel } from 'src/app/interfaces/imagen.interface';
 @Component({
   selector: 'app-portafolio',
   templateUrl: './portafolio.component.html',
-  styleUrls: ['./portafolio.component.css']
+  styleUrls: ['./portafolio.component.scss']
 })
 export class PortafolioComponent {
 
