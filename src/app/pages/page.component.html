@@ -1,11 +1,11 @@
 <div class="contain">
+
     <nav (window:resize)="cambiarMenu()">
 
-        <p-tabMenu *ngIf="!banderaMenu"
-        [model]="items"></p-tabMenu>
-    
-        <p-menubar *ngIf="banderaMenu"
-         [model]="items" [style]="{width: '100vw'}"></p-menubar>
+        <c-bar-nav [itemNavBar]="items" *ngIf="!banderaMenu"></c-bar-nav>
+
+        <c-bar-nav-responsive *ngIf="banderaMenu"
+         [itemNavBar]="items" (onShowNavBar)="showNavBar()"></c-bar-nav-responsive>
     
     </nav>
     
@@ -13,7 +13,7 @@
         <router-outlet></router-outlet>
     </div>
 
-    <footer>
+    <!-- <footer>
         footer
-    </footer>
+    </footer> -->
 </div>

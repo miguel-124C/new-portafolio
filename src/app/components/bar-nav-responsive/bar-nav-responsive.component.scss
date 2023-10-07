@@ -1,0 +1,39 @@
+.contain{
+    position: relative;
+    background: var(--black-500);
+
+    div{
+        height: var(--weight-nav-bar);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        i{
+            cursor: pointer;
+        }    
+    }
+
+    .contain-items{
+        position: absolute;
+        top: var(--weight-nav-bar);
+        width: 100%;
+        background-color: var(--black-400);
+        color: #fff;
+        
+        li{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            height: 40px;
+        }
+
+        li:hover{
+            background: var(--black-500);
+        }
+    }
+
+    .select{
+        color: var(--blue-400);
+        background-color: var(--black-600);
+    }
+}

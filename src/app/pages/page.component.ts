@@ -22,8 +22,9 @@ export class PageComponent implements OnInit {
 
   cambiarMenu(): void{    
     this.widthWindow = window.outerWidth;
+    console.log(this.widthWindow);
 
-    if (this.widthWindow <= 580) {
+    if (this.widthWindow <= 840) {
       this.banderaMenu = true;
     }else{
       this.banderaMenu = false;
@@ -50,5 +51,8 @@ export class PageComponent implements OnInit {
       }
   ];
 
+  showNavBar(){
+  
+  }
 
 }

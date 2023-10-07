@@ -6,9 +6,8 @@ header{
     flex-wrap: wrap;
     gap: 30px;
     position: relative;
-    background: rgb(24, 24, 24);
+    background: var(--black-500);
     padding: 0 10px;
-    border-bottom: 1px solid white;
 
     img{
         border-radius: 50%;

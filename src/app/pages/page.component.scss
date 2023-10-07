@@ -4,12 +4,12 @@
     nav{    
         position: fixed;
         top: 0;
-        z-index: 100;
         width: 100%;
+        z-index: 100;
     }
 
     div{
-        margin-top: 50px;
+        margin-top: var(--weight-nav-bar);
     }
 
     footer{
