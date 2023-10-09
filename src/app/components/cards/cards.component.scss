@@ -1,23 +1,42 @@
 .cards{
+    position: relative;
     min-height: 500px;
     color: white;
-    background-color: #000a;
+    background-color: #000d;
     display: grid;
     grid-template-rows: 10% 90%;
     grid-template-columns: 1fr;
     justify-content: center;
-    padding: 10px;
-    border: 3px solid var(--blue-800);
+    overflow: hidden;
+    border: 3px solid var(--blue-300);
+    border-radius: 15px;
 
     .title{
-        margin: 0 auto;
-        // background-color: aqua;
+        width: 100%;
+        z-index: 100;
+        background-color: var(--blue-300);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-left: 20px;
     }
-
+    
     .paragraph{
+        z-index: 100;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+    }
+
+    .fond-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        filter: hue-rotate(20deg);
     }
 }

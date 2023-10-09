@@ -1,7 +1,8 @@
 .contain{
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
+    background-color: #000;
 
     div{
         height: var(--width-nav-bar);
@@ -10,7 +11,7 @@
         padding-left: 10px;
         i{
             cursor: pointer;
-            color: white;
+            color: var(--blue-400);
         }    
     }
 

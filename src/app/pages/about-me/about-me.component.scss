@@ -1,19 +1,24 @@
 
 .contenido{
     min-height: 100vh;
-    padding : var(--width-nav-bar) 10px;
-    background: var(--black-500);
+    padding : calc(var(--width-nav-bar) + 10px) 10px 10px;
+    background-image: url('../../../assets/img/info-personal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .contain-cards{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(400px, 700px));
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
     }
 }
 
 @media screen and ( max-width: 920px ) {
     .contenido{
+        background-attachment: fixed;
+        background-position: center;
+
         .contain-cards{
             grid-template-columns: 1fr;
         }

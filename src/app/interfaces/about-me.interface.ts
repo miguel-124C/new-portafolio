@@ -1,4 +1,5 @@
 export interface AboutMe {
-    title:      string;
-    paragraph:  string;
+    title:          string;
+    paragraph:      string;
+    icon: string;
 }
