@@ -11,7 +11,7 @@ export class HomeComponent {
   redes: Redes[] = [
     {
       name: 'WhatsApp',
-      href: 'https://wa.me/59178071967?text=Me%20interesaria%20saber%20mas%20de%20ti',
+      href: 'https://wa.me/59178071967?text=Me+interesaria+saber+mas+de+ti',
       icon: 'pi pi-whatsapp',
       color: 'green'
     },{
