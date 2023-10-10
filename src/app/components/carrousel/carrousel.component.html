@@ -1,0 +1,12 @@
+<div class="carrousel">
+    <ul class="slider-track">
+        <li class="slide" *ngFor="let skill of skills">
+            {{ skill.nameSkill }}
+            <i [class]="skill.icon" [style]="{color : skill.color}"></i>
+        </li>
+        <li class="slide" *ngFor="let skill of skills">
+            {{ skill.nameSkill }}
+            <i [class]="skill.icon" [style]="{color : skill.color}"></i>
+        </li>
+    </ul>
+</div>

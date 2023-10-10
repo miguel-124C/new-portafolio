@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { ChipsComponent } from './chips/chips.component';
 import { CardsComponent } from './cards/cards.component';
 import { CardsImgComponent } from './cards-img/cards-img.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
+import { SlierRangeComponent } from './slider-range/slier-range.component';
 
 @NgModule({
     declarations: [
@@ -13,14 +15,18 @@ import { CardsImgComponent } from './cards-img/cards-img.component';
     BarNavResponsiveComponent,
     ChipsComponent,
     CardsComponent,
-    CardsImgComponent
+    CardsImgComponent,
+    CarrouselComponent,
+    SlierRangeComponent
   ],
   exports: [
     BarNavComponent,
     BarNavResponsiveComponent,
     ChipsComponent,
     CardsComponent,
-    CardsImgComponent
+    CardsImgComponent,
+    CarrouselComponent,
+    SlierRangeComponent
   ],
   imports: [
     RouterModule,

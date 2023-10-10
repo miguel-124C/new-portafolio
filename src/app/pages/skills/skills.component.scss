@@ -1,8 +1,16 @@
-.containSkills{
-    padding-top : var(--width-nav-bar);
-    background-image: url('../../../assets/img/fondo3.gif');
-}
 
-.contain-card{
-    // max-width: 400px;
+#conocimiento{
+    min-height: 100vh;
+    padding-top: var(--width-nav-bar);
+    color: #fff;
+    background: url('../../../assets/img/fondo4.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

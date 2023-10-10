@@ -1,7 +1,7 @@
 
 
 export interface Skill {
-    skill:      string,
+    nameSkill:      string,
     icon:       string,
     percent:    number,
     color?: string;

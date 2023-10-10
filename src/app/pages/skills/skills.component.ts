@@ -10,29 +10,30 @@ export class SkillsComponent {
 
   public skills: Skill[] = [
     {
-      skill:'Html',
+      nameSkill:'Html',
       percent: 95,
       icon: 'fa-brands fa-html5',
-      color: 'orange'
+      color: 'rgb(221, 122, 0)'
     },{
-      skill:'Css',
+      nameSkill:'Css',
       percent: 85,
       icon: 'fa-brands fa-css3-alt',
-      color: 'blue'
+      color: '#25f'
     },{
-      skill:'JavaScript',
+      nameSkill:'JavaScript',
       percent: 75,
       icon: 'fa-brands fa-js',
-      color: 'black'
+      color: 'yellow'
     },{
-      skill:'Angular',
+      nameSkill:'Angular',
       percent: 70,
       icon: 'fa-brands fa-angular',
       color: 'red'
     },{
-      skill:'GitHub',
+      nameSkill:'GitHub',
       percent: 65,
-      icon: 'fa-brands fa-github'
+      icon: 'fa-brands fa-github',
+      color: '#fff'
     }
 
   ];
