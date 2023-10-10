@@ -1,16 +1,80 @@
 
 #conocimiento{
     min-height: 100vh;
-    padding-top: var(--width-nav-bar);
+    padding: var(--width-nav-bar) 0;
     color: #fff;
-    background: url('../../../assets/img/fondo4.gif');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: url('../../../assets/img/fondo4.gif');
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background: var(--black-600);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    .contain-carrousel{
+        padding-top: 50px;
+
+        div{
+            border-bottom: 5px solid var(--blue-300);
+            h2{
+                border-top: 5px solid var(--blue-300);
+                border-right: 5px solid var(--blue-300);
+                border-left: 5px solid var(--blue-300);
+
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                width: max-content;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .list-estadistica{
+        width: 100%;
+        background: var(--blue-700);
+        display: grid;
+
+        .estadistica{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 15px;
+            align-items: center;
+
+            .title{
+                font-size: 2em;
+
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 420px ) {
+    #conocimiento{
+        .contain-carrousel{
+            div{
+                h2{
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .list-estadistica{
+            .estadistica{
+                grid-template-columns: 1fr;
+                padding: 15px;
+                gap: 10px;
+    
+                .title{
+                    font-size: 1.5em;
+    
+                }
+            }
+        }
+    }
+    
 }

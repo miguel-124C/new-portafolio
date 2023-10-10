@@ -1,5 +1,20 @@
 
 <div id="conocimiento">
-    <c-carrousel [skills]="skills"></c-carrousel>
-    <c-slider-range [skills]="skills"></c-slider-range>
+
+    <div class="contain-carrousel">
+        <div>
+            <h2>Conocimiento</h2>
+        </div>
+        <c-carrousel [skills]="skills"></c-carrousel>
+    </div>
+
+    <div class="list-estadistica">
+        <div *ngFor="let skill of skills" class="estadistica">
+            <div class="title">
+                {{ skill.nameSkill }}
+            </div>
+            <c-slider-range 
+            [percent]="skill.percent"></c-slider-range>
+        </div>
+    </div>
 </div>

@@ -1,5 +1,4 @@
 .carrousel{
-    box-shadow: 0px 0px 100px 0px rgb(0, 0, 0);
     width: 1500px;
     height: 500px;
     overflow: hidden;
@@ -63,9 +62,41 @@
     
             .slide{
                 width: 400px;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 420px ) {
+    .carrousel{
+        width: 300px;
+        height: 300px;
+
+        .slider-track{
+            width: calc(300px * 10);
     
+            .slide{
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 320px ) {
+    .carrousel{
+        width: 200px;
+        height: 200px;
+
+        .slider-track{
+            width: calc(200px * 10);
+    
+            .slide{
+                width: 200px;   
+                font-size: 1.5em;
+
                 i{
-                    font-size: 5em;
+                    font-size: 4em;
                 }
             }
         }
