@@ -1,6 +1,6 @@
 
 
-export interface Carousel {
+export interface Galeria {
 
     image:  string,
     name:   string,

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CarouselResponsiveOptions } from 'primeng/carousel';
-import { Carousel } from 'src/app/interfaces/imagen.interface';
+import { Galeria } from 'src/app/interfaces/imagen.interface';
 
 @Component({
   selector: 'app-portafolio',
@@ -9,7 +9,7 @@ import { Carousel } from 'src/app/interfaces/imagen.interface';
 })
 export class PortafolioComponent {
 
-  products: Carousel[] = [
+  products: Galeria[] = [
     {
       image:'assets/img/1.png',      
       desc: `Creado inicialmente sin ningun framework. Optimizado con Angular.

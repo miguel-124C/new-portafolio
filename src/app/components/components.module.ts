@@ -5,9 +5,9 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ChipsComponent } from './chips/chips.component';
 import { CardsComponent } from './cards/cards.component';
-import { CardsImgComponent } from './cards-img/cards-img.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
 import { SlierRangeComponent } from './slider-range/slier-range.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 @NgModule({
     declarations: [
@@ -15,18 +15,18 @@ import { SlierRangeComponent } from './slider-range/slier-range.component';
     BarNavResponsiveComponent,
     ChipsComponent,
     CardsComponent,
-    CardsImgComponent,
     CarrouselComponent,
-    SlierRangeComponent
+    SlierRangeComponent,
+    GaleriaComponent
   ],
   exports: [
     BarNavComponent,
     BarNavResponsiveComponent,
     ChipsComponent,
     CardsComponent,
-    CardsImgComponent,
     CarrouselComponent,
-    SlierRangeComponent
+    SlierRangeComponent,
+    GaleriaComponent
   ],
   imports: [
     RouterModule,

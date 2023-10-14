@@ -1,6 +1,8 @@
 .contain{
     padding-top : var(--width-nav-bar);
-    background-image: url('../../../assets/img/fondo2.gif');
+    // background-image: url('../../../assets/img/fondo2.gif');
+    background-color: black;
+    min-height: 100vh;
 }
 
 h1{ 
@@ -8,6 +10,7 @@ h1{
     line-height: 80px;
     padding-left: 20px;
     border-bottom: 1px solid var(--blue-600);
+    color: white;
 }
 
 .containGallery{
