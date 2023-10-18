@@ -1,11 +1,11 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'c-slider-range',
   templateUrl: './slier-range.component.html',
   styleUrls: ['./slier-range.component.scss']
 })
-export class SlierRangeComponent implements OnInit {
+export class SlierRangeComponent implements AfterViewInit {
 
   @Input()
   public percent: number = 0;
@@ -23,11 +23,11 @@ export class SlierRangeComponent implements OnInit {
     fill: 'forwards',
   }
 
-  ngOnInit(): void {
+  constructor(){}
+
+  ngAfterViewInit(): void {
     this.showPercent();
   }
-
-  constructor(){}
 
   showPercent(){
     this.keyFrames = [
@@ -35,9 +35,7 @@ export class SlierRangeComponent implements OnInit {
       { width: `${this.percent}%` }
     ];
 
-    setTimeout(()=>{
-      this.percentElement.nativeElement.animate(this.keyFrames, this.options);
-    }, 10);
+    this.percentElement.nativeElement.animate(this.keyFrames, this.options);
   }
 
 }
