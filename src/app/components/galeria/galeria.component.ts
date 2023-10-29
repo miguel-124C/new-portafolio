@@ -35,7 +35,6 @@ export class GaleriaComponent implements OnInit {
       button.classList.contains(String(i))
         ? button.style.background = "var(--blue-400)"
         : button.style.background = "transparent";
-
     });
   }
 
@@ -65,7 +64,6 @@ export class GaleriaComponent implements OnInit {
     }else{
       this.sizeProject = 600;
     }
-    
   }
 
 }

@@ -1,39 +1,79 @@
-
 .contain{
-    height: 10px;
-    width: 500px;
-    background-color: var(--blue-500);
+    display: flex;
+    align-items: center;
+    gap: 30px;
 
-    position: relative;
-
-    .percent{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: var(--blue-300);
+    strong{
+        font-size: 3em;
     }
-    .percent::before{
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        background-color: var(--black-400);
-        right: 0;
-        border-radius: 50%;
-        transform: scale(2);
+    div{
+        .name{
+            font-size: 1em;
+        }
+        .contain-range{
+            width: 600px;
+            background-color: var(--blue-500);
+            position: relative;
+            border-radius: 10px;
+            display: flex;
+        
+            .percent{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 10px;
+                background-color: var(--blue-300);
+                border-radius: 10px;
+            }
+            .percent::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 100%;
+                background-color: var(--black-400);
+                right: 0;
+                border-radius: 50%;
+                transform: scale(2);
+            }
+        }
     }
 }
 
 @media screen and ( max-width: 760px ) {
     .contain{
-        width: 300px;
-    }    
+        div{
+            .contain-range{
+                width: 400px;
+            }    
+        }
+    }
 }
 
 @media screen and ( max-width: 580px ) {
     .contain{
-        width: 200px;
-    }    
+        gap: 5px;
+        strong{
+            font-size: 1.8em;
+        }
+        div{
+            .contain-range{
+                width: 300px;
+            }    
+        }
+    }
+}
+
+@media screen and ( max-width: 350px ) {
+    .contain{
+        gap: 10px;
+        strong{
+            font-size: 1.5em;
+        }
+        div{
+            .contain-range{
+                width: 200px;
+            }    
+        }
+    }
 }

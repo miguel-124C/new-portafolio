@@ -17,7 +17,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
     CardsComponent,
     CarrouselComponent,
     SlierRangeComponent,
-    GaleriaComponent
+    GaleriaComponent,
   ],
   exports: [
     BarNavComponent,

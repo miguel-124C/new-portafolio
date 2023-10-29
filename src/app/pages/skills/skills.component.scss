@@ -3,10 +3,6 @@
     min-height: 100vh;
     padding: var(--width-nav-bar) 0;
     color: #fff;
-    // background: url('../../../assets/img/fondo4.gif');
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     background: var(--black-600);
 
     display: flex;
@@ -36,20 +32,10 @@
 
     .list-estadistica{
         width: 100%;
-        background: var(--blue-700);
-        display: grid;
-
-        .estadistica{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 15px;
-            align-items: center;
-
-            .title{
-                font-size: 2em;
-
-            }
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
 
@@ -59,19 +45,6 @@
             div{
                 h2{
                     font-size: 1.3em;
-                }
-            }
-        }
-
-        .list-estadistica{
-            .estadistica{
-                grid-template-columns: 1fr;
-                padding: 15px;
-                gap: 10px;
-    
-                .title{
-                    font-size: 1.5em;
-    
                 }
             }
         }

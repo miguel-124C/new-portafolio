@@ -20,7 +20,7 @@ export class SkillsComponent {
       icon: 'fa-brands fa-css3-alt',
       color: '#25f'
     },{
-      nameSkill:'JavaScript',
+      nameSkill:'Js',
       percent: 75,
       icon: 'fa-brands fa-js',
       color: 'yellow'

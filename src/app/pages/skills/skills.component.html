@@ -10,11 +10,8 @@
 
     <div class="list-estadistica">
         <div *ngFor="let skill of skills" class="estadistica">
-            <div class="title">
-                {{ skill.nameSkill }}
-            </div>
-            <c-slider-range 
-            [percent]="skill.percent"></c-slider-range>
+            <c-slider-range
+            [skill]="skill"></c-slider-range>
         </div>
     </div>
 </div>

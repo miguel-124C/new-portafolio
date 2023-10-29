@@ -1,4 +1,5 @@
 import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Skill } from 'src/app/interfaces/skill.interface';
 
 @Component({
   selector: 'c-slider-range',
@@ -8,7 +9,7 @@ import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, ViewChil
 export class SlierRangeComponent implements AfterViewInit {
 
   @Input()
-  public percent: number = 0;
+  public skill!: Skill;
 
   @ViewChild('percent')
   public percentElement!: ElementRef<HTMLDivElement>;
@@ -30,9 +31,10 @@ export class SlierRangeComponent implements AfterViewInit {
   }
 
   showPercent(){
+    const { percent } = this.skill;
     this.keyFrames = [
       { width: '0%', offset: 0 },
-      { width: `${this.percent}%` }
+      { width: `${percent}%` }
     ];
 
     this.percentElement.nativeElement.animate(this.keyFrames, this.options);
