@@ -1,16 +1,7 @@
-<div id="container-proyectos" (window:resize)="changeSizeResponsive()">
-    <div class="proyectos" *ngFor="let proyect of proyects">
-        <img [src]="proyect.image" alt="">
-        <span>
-            <p>{{ proyect.desc }}</p>
-            <a [href]="proyect.href" target="_blank">Ir al sitio</a>
-        </span>
-    </div>
+<div id="container">
+    <img [src]="proyect.image" alt="">
+    <span>
+        <p>{{ proyect.desc }}</p>
+        <a [href]="proyect.href" target="_blank">Ir al sitio</a>
+    </span>
 </div>
-<span class="btn-previous-next-img">
-    <input
-        *ngFor="let item of proyects; let i = index"
-        type="radio" 
-        [class]="i.toString() + ' buttons'"
-        (click)="nextProyect(i)">
-</span>

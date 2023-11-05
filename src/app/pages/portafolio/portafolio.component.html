@@ -1,8 +1,20 @@
 
 <div class="contain">
     <h1 class="text-6xl">Proyectos</h1>
+    <hr>
+    <h2 class="text-4xl p-4 text-center">Básicos</h2>
+    <hr>
     <div class="containGallery">
-        <c-galeria [proyects]="products"></c-galeria>
+        <div *ngFor="let proyect of proyects">
+            <c-galeria [proyect]="proyect"></c-galeria>
+        </div>
     </div>
-
+    <hr>
+    <h2 class="text-4xl p-4 text-center">Angular</h2>
+    <hr>
+    <div class="containGallery">
+        <div *ngFor="let proyect of proyects">
+            <c-galeria [proyect]="proyect"></c-galeria>
+        </div>
+    </div>
 </div>

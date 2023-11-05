@@ -1,20 +1,25 @@
 .contain{
     padding-top : var(--width-nav-bar);
     // background-image: url('../../../assets/img/fondo2.gif');
-    background-color: black;
+    background-color: var(--black-500);
     min-height: 100vh;
+
+    h1, h2{
+        padding-left: 20px;
+        color: white;
+    }
+    h2{
+        background-color: var(--black-400);
+    }
+    .containGallery{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
 }
 
-h1{ 
-    height: 80px;
-    line-height: 80px;
-    padding-left: 20px;
-    border-bottom: 1px solid var(--blue-600);
-    color: white;
-}
-
-.containGallery{
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
+hr{
+    border: 2px solid var(--blue-600);;
 }

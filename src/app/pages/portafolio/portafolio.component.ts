@@ -9,7 +9,7 @@ import { Galeria } from 'src/app/interfaces/imagen.interface';
 })
 export class PortafolioComponent {
 
-  products: Galeria[] = [
+  proyects: Galeria[] = [
     {
       image:'assets/img/1.png',      
       desc: `Creado inicialmente sin ningun framework. Optimizado con Angular.
@@ -65,22 +65,4 @@ export class PortafolioComponent {
   
   }
 
-
-  // breakpoint: string;
-  // /**
-  //  * The number of visible items on breakpoint.
-  //  */
-  // numVisible: number;
-  // /**
-  //  * The number of scrolled items on breakpoint.
-  //  */
-  // numScroll: number;
-
-  public responsiveOptions: CarouselResponsiveOptions[] = [
-    {
-      breakpoint: '720px',
-      numVisible: 2,
-      numScroll: 2,
-    }
-  ];
 }

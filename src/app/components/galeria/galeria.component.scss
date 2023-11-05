@@ -1,7 +1,7 @@
 
-#container-proyectos{
-    width: 600px;
-    height: 500px;
+#container{
+    width: 400px;
+    height: 400px;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -9,67 +9,40 @@
     box-shadow: 0 0 15px 2px var(--blue-500);
     border-radius: 20px;
 
-    .proyectos{
-        // transform: translateX(-500px);
-        transition: transform 1s;
-        position: relative;
-        height: 500px;
-        cursor: pointer;
-
-        span{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            color: #fff;
-            position: absolute;
-            bottom: -100%;
-            left: 0;
-            background: #000;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: all .70s;
-
-            p, a{
-                width: 80%;
-                color: #fff;
-            }
-        }
-
-        img{
-            width: 600px;
-            height: 100%;
-            transition: all .70s;
-        }
+    img{
+        width: 100%;
+        height: 100%;
     }
-    .proyectos:hover span{
-        bottom: 0;
-        opacity: .85;
+
+    span{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        
+        p, a{
+            width: 80%;
+            color: #fff;
+        }
     }
 }
+#container:hover span{
+    opacity: .8;
+    animation: forwards .7s top;
+}
 
-.btn-previous-next-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    height: 50px;
 
-    input:first-child{
-        background: var(--blue-400);
-    }
-
-    input{
-        appearance: none;
-        border-radius: 50%;
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-        border: 2px solid var(--blue-400);
-        transition: background 1s;
-    }
+@keyframes top {
+    0%{ transform: translateY(0); }
+    100%{ transform: translateY(-100%); }
 }
 
 @media screen and ( max-width: 720px ) {
