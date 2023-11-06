@@ -1,42 +1,54 @@
 
 #container{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    border: 5px double var(--blue-500);
-    box-shadow: 0 0 15px 2px var(--blue-500);
-    border-radius: 20px;
-
-    img{
-        width: 100%;
-        height: 100%;
-    }
-
-    span{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+    h1{
+        text-align: center;
         color: #fff;
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        background: #000;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        
-        p, a{
-            width: 80%;
+    }
+    .contain-card{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border: 5px double var(--blue-500);
+        border-radius: 20px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        span{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
             color: #fff;
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            background: #000;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            
+            p, a{
+                width: 80%;
+                color: #fff;
+            }
         }
     }
 }
-#container:hover span{
+#container .contain-card:hover span{
     opacity: .8;
     animation: forwards .7s top;
+}
+.contain-card:hover{
+    box-shadow: 0 0 15px 2px var(--blue-500);
+}
+#container:hover h1{
+    text-shadow: -10px 10px 15px var(--blue-500);
 }
 
 
@@ -46,22 +58,22 @@
 }
 
 @media screen and ( max-width: 720px ) {
-    #container-proyectos{
-        width: 500px;
-        height: 500px;
-        .proyectos{
+    #container{
+        .contain-card{
+            width: 450px;
+            height: 450px;
             img{
-                width: 500px;
+                width: 450px;
             }
         }
     }
 }
 
 @media screen and ( max-width: 550px ) {
-    #container-proyectos{
-        width: 400px;
-        height: 400px;
-        .proyectos{
+    #container{
+        .contain-card{
+            width: 400px;
+            height: 400px;
             img{
                 width: 400px;
             }
@@ -70,34 +82,24 @@
 }
 
 @media screen and ( max-width: 480px ) {
-    #container-proyectos{
-        width: 300px;
-        .proyectos{
+    #container{
+        .contain-card{
+            width: 325px;
             img{
-                width: 300px;
+                width: 325px;
             }
         }
     }
 }
 
 @media screen and ( max-width: 350px ) {
-    #container-proyectos{
-        width: 250px;
-        height: 350px;
-        .proyectos{
+    #container{
+        .contain-card{
+            width: 250px;
+            height: 350px;
             img{
                 width: 250px;
             }
-        }
-    }
-
-    .btn-previous-next-img{
-        gap: 5px;
-        width: 100%;
-        height: 50px;
-        input{
-            width: 15px;
-            height: 15px;
         }
     }
 }

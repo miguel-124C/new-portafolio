@@ -1,7 +1,10 @@
 <div id="container">
-    <img [src]="proyect.image" alt="">
-    <span>
-        <p>{{ proyect.desc }}</p>
-        <a [href]="proyect.href" target="_blank">Ir al sitio</a>
-    </span>
+    <h1>{{ proyect.name }}</h1>
+    <div class="contain-card">
+        <img [src]="proyect.image" alt="">
+        <span>
+            <p>{{ proyect.desc }}</p>
+            <a [href]="proyect.href" target="_blank">Ir al sitio</a>
+        </span>
+    </div>
 </div>
