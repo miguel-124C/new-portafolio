@@ -20,7 +20,7 @@ export class SkillsComponent {
       icon: 'fa-brands fa-css3-alt',
       color: '#25f'
     },{
-      nameSkill:'Js',
+      nameSkill:'Js - Ts',
       percent: 75,
       icon: 'fa-brands fa-js',
       color: 'yellow'
@@ -30,10 +30,15 @@ export class SkillsComponent {
       icon: 'fa-brands fa-angular',
       color: 'red'
     },{
-      nameSkill:'GitHub',
+      nameSkill:'Git - GitHub',
       percent: 65,
       icon: 'fa-brands fa-github',
       color: '#fff'
+    },{
+      nameSkill:'PostgreSQL',
+      percent: 45,
+      icon: 'fa-solid fa-database',
+      color: '#555'
     }
 
   ];

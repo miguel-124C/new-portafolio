@@ -50,7 +50,7 @@ export const Basicos: Galeria[] = [
     href:'https://miguel-124c.github.io/datosMeteorologicas/'
   },{
     image: 'assets/img/10.png',
-    desc: 'Proyecto final del curso de Sisco de JavaScript',
+    desc: 'Proyecto final del curso de Sisco de JavaScript de Cisco',
     name: 'Api Rick and Morty',
     href: 'https://miguel-124c.github.io/ProyectoCursoDeSisco/'
   },{
@@ -80,7 +80,8 @@ export const Intermedio: Galeria[] = [
 export const Avanzado: Galeria[] = [
   {
     image: 'assets/img/13.png',
-    desc: 'CRUD de alarmas basado en el proyecto anterior, le añadí base de datos y Backend con Node.js.',
+    desc: 'CRUD de alarmas basado en el proyecto anterior, le añadí base de datos y Backend con Node.js.'+
+    ' Solo me enfoque en hacer la parte del CRUD',
     name: 'AppReloj',
     href: 'https://app-reloj.netlify.app/alarma',
   }

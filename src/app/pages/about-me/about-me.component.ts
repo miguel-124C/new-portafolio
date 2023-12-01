@@ -9,6 +9,7 @@ import { AboutMe } from 'src/app/interfaces/about-me.interface';
 export class AboutMeComponent implements OnInit {
   
   edad: number = this.calcularEdad('2002-10-22');
+  textColorLinks: string = 'var(--blue-400)';
 
   ngOnInit(): void {}
 
@@ -65,15 +66,24 @@ export class AboutMeComponent implements OnInit {
       icon: 'fa-solid fa-file-invoice-dollar'
       
     },{
-      title: 'Titulos',
+      title: 'Certificados',
       paragraph: `
-      - Me gradué del colegio 'Josefina Balsamos Señor de los Milagros'.<br>
-      - Gané certificados en un programa de aprendizaje gratuito.<br>
-      - Me gradué del colegio 'Josefina Balsamos Señor de los Milagros'.<br>
-      - Me gradué del colegio 'Josefina Balsamos Señor de los Milagros'.<br>
-      - Me gradué del colegio 'Josefina Balsamos Señor de los Milagros'.<br>
-      - Me gradué del colegio 'Josefina Balsamos Señor de los Milagros'.<br>
-      - Me gradué del colegio 'Josefina Balsamos Señor de los Milagros'.<br>
+
+      <a style='color: ${this.textColorLinks}' target='_blank' 
+      href='https://app.aluracursos.com/user/mikicuellar20/program/certificate'>
+        Certificado de Programa de Alura Latam.
+      </a>
+      
+      <a style='color: ${this.textColorLinks}' target='_blank'
+      href='assets/js-certificate.pdf'>
+        Curso Programacion con JavaScript (JSE).
+      </a>
+      
+      <a style='color: ${this.textColorLinks}' target='_blank'
+      href='https://cursos.devtalles.com/certificates/e7pxxmgke4'>
+        Principio SOLID y Clean Code.
+      </a>
+
       `,
       icon: 'fa-solid fa-book-open'
     }
