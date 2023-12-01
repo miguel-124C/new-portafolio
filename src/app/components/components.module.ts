@@ -8,6 +8,7 @@ import { CardsComponent } from './cards/cards.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
 import { SlierRangeComponent } from './slider-range/slier-range.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -18,6 +19,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
     CarrouselComponent,
     SlierRangeComponent,
     GaleriaComponent,
+    FooterComponent,
   ],
   exports: [
     BarNavComponent,
@@ -26,7 +28,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
     CardsComponent,
     CarrouselComponent,
     SlierRangeComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    FooterComponent,
   ],
   imports: [
     RouterModule,
