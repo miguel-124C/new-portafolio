@@ -4,7 +4,7 @@ export const Basicos: Galeria[] = [
   {
     image:'assets/img/1.png',      
     desc: `Tiene las funcionalidades de todo reloj: cuenta con cronometro, temporizador, reloj, y alarmas.
-        Hice propiamente un crud para la parte de alarmas.`,
+        Hice propiamente un crud no persistente para la parte de alarmas.`,
     name:'RelojApp',
     href:'https://miguel-124c.github.io/Cronometro-Alarma/'
   },{
@@ -68,19 +68,37 @@ export const Basicos: Galeria[] = [
 
 export const Intermedio: Galeria[] = [
   {
-    image:'assets/img/1.png',      
-    desc: `Creado inicialmente sin ningun framework. Optimizado con Angular.
-        Tiene las funcionalidades de todo reloj: cuenta con cronometro, temporizador, reloj, y alarmas.
-        Hice propiamente un crud para la parte de alarmas`,
-    name:'RelojApp',
-    href:'https://miguel-124c.github.io/cronometro/'
-  }
+    image:'assets/img/gifts.png',
+    desc: `App hecha en el curso de Udemy. Aprendi muchas cosas, como, el manejar
+      el LocalStorage, no sabia de su existencia, tambien de como se consumen las Api
+      en Angular`,
+    name:'Gifts App',
+    href:'https://giftsa44.netlify.app'
+  },{
+    image:'assets/img/country.png',
+    desc: `En este proyecto consumi una API y comprendi mas sobre las rutas en Angular,
+    también más sobre BootStrap`,
+    name:'Country App',
+    href:'https://countries-app4.netlify.app/countries/by-capital'
+  },{
+    image:'assets/img/conversores.png',
+    desc: `App que hace varias conversiones... la que mas destaco es la de modenas,
+    ya que use una API.`,
+    name:'Conversores',
+    href:'https://coversores.netlify.app/conversor/monedas'
+  },{
+    image:'assets/img/maps.png',      
+    desc: `Proyecto hecho en el curso de Udemy de Angular, conocí conceptos sobre los mapas,
+    usando MapBox, sobre los marcadores, el zoom y algunos eventos`,
+    name:'Maps App',
+    href:'https://mapsapplication.netlify.app/maps/fullScreen'
+  },
 ];
 
 export const Avanzado: Galeria[] = [
   {
     image: 'assets/img/13.png',
-    desc: 'CRUD de alarmas basado en el proyecto anterior, le añadí base de datos y Backend con Node.js.'+
+    desc: 'CRUD de alarmas basado en el proyecto anterior, le añadí base de datos con PostGres y Backend con Node.js.'+
     ' Solo me enfoque en hacer la parte del CRUD',
     name: 'AppReloj',
     href: 'https://app-reloj.netlify.app/alarma',

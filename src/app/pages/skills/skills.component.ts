@@ -38,7 +38,7 @@ export class SkillsComponent {
       nameSkill:'PostgreSQL',
       percent: 45,
       icon: 'fa-solid fa-database',
-      color: '#555'
+      color: '#b9b9b9'
     }
 
   ];
