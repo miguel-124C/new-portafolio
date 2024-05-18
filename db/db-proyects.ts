@@ -2,7 +2,7 @@ import { Galeria } from "src/app/interfaces/imagen.interface";
 
 export const Basicos: Galeria[] = [
   {
-    image:'assets/img/1.png',      
+    image:'assets/img/1.png',
     desc: `Tiene las funcionalidades de todo reloj: cuenta con cronometro, temporizador, reloj, y alarmas.
         Hice propiamente un crud no persistente para la parte de alarmas.`,
     name:'RelojApp',

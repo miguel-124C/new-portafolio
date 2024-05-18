@@ -70,7 +70,7 @@ export class AboutMeComponent implements OnInit {
       paragraph: `
 
       <a style='color: ${this.textColorLinks}' target='_blank' 
-      href='https://app.aluracursos.com/user/mikicuellar20/program/certificate'>
+      href='https://app.aluracursos.com/user/mikicuellar20/fullCertificate/8c57709cdf5ed18f804fdf0e4788e26d'>
         Certificado de Programa de Alura Latam.
       </a>
       

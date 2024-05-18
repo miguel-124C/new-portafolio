@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BarNavComponent } from './bar-nav/bar-nav.component';
-import { BarNavResponsiveComponent } from './bar-nav-responsive/bar-nav-responsive.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ChipsComponent } from './chips/chips.component';
@@ -12,8 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
-    BarNavComponent,
-    BarNavResponsiveComponent,
     ChipsComponent,
     CardsComponent,
     CarrouselComponent,
@@ -22,8 +18,6 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   exports: [
-    BarNavComponent,
-    BarNavResponsiveComponent,
     ChipsComponent,
     CardsComponent,
     CarrouselComponent,
