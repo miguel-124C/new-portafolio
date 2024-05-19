@@ -4,8 +4,8 @@ import { Galeria } from 'src/app/interfaces/imagen.interface';
 
 @Component({
   selector: 'app-portafolio',
-  templateUrl: './portafolio.component.html',
-  styleUrls: ['./portafolio.component.scss']
+  templateUrl: './portafolio-section.component.html',
+  styleUrls: ['./portafolio-section.component.scss']
 })
 export class PortafolioComponent {
 

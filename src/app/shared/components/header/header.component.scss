@@ -1,0 +1,37 @@
+header{
+  background: transparent;
+  height: var(--width-nav-bar);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    .email-content{
+
+      i{
+        font-size: 2em;
+        font-family: var(--ff-logo);
+        margin-right: 15px;
+      }
+    }
+
+    ul{
+      display: flex;
+      gap: 1rem;
+
+      li{
+      
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

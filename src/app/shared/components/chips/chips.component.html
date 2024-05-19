@@ -1,8 +1,7 @@
 <div class="contain">
     <div class="chips" *ngFor="let item of chipsItem">
         <a [href]="item.href" target="_blank">
-            <i [class]="item.icon" [style]="{color: item.color}"></i>
-            <p>{{ item.name }}</p>
+            <i [class]="item.icon"></i>
         </a>
     </div>
 </div>

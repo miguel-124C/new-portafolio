@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { PrimengModule } from './primeng/primeng.module';
-import { HomeComponent } from './layouts/home-page/home.component';
+import { HomeComponent } from './layouts/home-section/home-section.component';
 import { LayoutsModule } from './layouts/layouts.module';
 
 

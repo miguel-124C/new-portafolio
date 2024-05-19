@@ -3,8 +3,8 @@ import { AboutMe } from 'src/app/interfaces/about-me.interface';
 
 @Component({
   selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+  templateUrl: './about-me-section.component.html',
+  styleUrls: ['./about-me-section.component.scss']
 })
 export class AboutMeComponent implements OnInit {
   

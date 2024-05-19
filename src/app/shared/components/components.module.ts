@@ -7,6 +7,7 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
 import { SlierRangeComponent } from './slider-range/slier-range.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     CarrouselComponent,
     SlierRangeComponent,
     GaleriaComponent,
+    HeaderComponent,
     FooterComponent,
   ],
   exports: [
@@ -23,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
     CarrouselComponent,
     SlierRangeComponent,
     GaleriaComponent,
+    HeaderComponent,
     FooterComponent,
   ],
   imports: [

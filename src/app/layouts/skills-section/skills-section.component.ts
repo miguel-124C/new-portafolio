@@ -3,8 +3,8 @@ import { Skill } from 'src/app/interfaces/skill.interface';
 
 @Component({
   selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  templateUrl: './skills-section.component.html',
+  styleUrls: ['./skills-section.component.scss']
 })
 export class SkillsComponent {
 

@@ -1,0 +1,19 @@
+<header class="container">
+  <nav>
+    <div class="email-content">
+      <i>M</i>
+      <a href="mailto:mikicuellar20@gmail.com">
+        mikicuellar20@gmail.com
+      </a>
+    </div>
+
+    <ul>
+      <li *ngFor="let title of getListTitlesHeader">
+        <a [href]="title.href">
+          {{ title.name }}
+          <i [class]="title.icon"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
