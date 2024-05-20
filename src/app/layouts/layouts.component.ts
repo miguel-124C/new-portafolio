@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListServices } from '../interfaces/services-list.interface';
 
 @Component({
   selector: 'principal',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class LayoutsComponent implements OnInit {
-  constructor() { }
 
+  public listService: ListServices[] = [
+    {
+      title: 'Diseño Responsive',
+      description: `Me especializo en hacer que una web sea responsive `
+    },{
+      title: 'Diseño UI',
+      description: `lfjaskldfj`
+    },{
+      title: 'API REST',
+      description: ``
+    },{
+      title: 'Reportes',
+      description: `Tengo experiencia en reportes con JasperReports`
+    },
+  ];
+
+  constructor() { }
   ngOnInit() { }
+
 }

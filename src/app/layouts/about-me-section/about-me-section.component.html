@@ -1,9 +1,19 @@
-<div class="contenido">
+<div class="content">
 
-    <div class="contain-cards">
-        <c-cards [cards]="item"
-            *ngFor="let item of dataPersonal">
-        </c-cards>
+    <div class="container columns">
+        <div class="contain-data" *ngFor="let item of dataPersonal">
+            <div class="title">
+                <i [class]="item.icon"></i>
+                <h1 class="text-linear"> {{ item.title }} </h1>
+            </div>
+            <div class="contain-cards">
+                <c-cards
+                *ngFor="let data of item.data"
+                [data]="data">
+    
+                </c-cards>
+            </div>
+        </div>
     </div>
 
 </div>

@@ -6,16 +6,9 @@ import { AboutMe } from 'src/app/interfaces/about-me.interface';
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss']
 })
-export class CardsComponent implements AfterViewInit{
-  
-  @ViewChild('desc')
-  public desc!: ElementRef<HTMLParagraphElement>;
+export class CardsComponent {
   
   @Input()
-  public cards: AboutMe = {} as AboutMe;
-  
-  ngAfterViewInit(): void {
-    this.desc.nativeElement.innerHTML = this.cards.paragraph;
-  }
+  public data: AboutMe = {} as AboutMe;
   
 }

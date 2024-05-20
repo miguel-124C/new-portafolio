@@ -9,10 +9,9 @@ import { TitleHeader } from 'src/app/interfaces/titles-header.interface';
 export class HeaderComponent {
 
   private listTitlesHeader: TitleHeader[] = [
-    { name: 'Services', href:'#service', icon:'' },
-    { name: 'Works', href:'#portafolio', icon:'' },
     { name: 'About Me', href:'#about-me', icon:'' },
     { name: 'Skills', href:'#skills', icon:'' },
+    { name: 'Works', href:'#portafolio', icon:'' },
     { name: 'Contact', href:'#contact-me', icon:'' },
   ];
 

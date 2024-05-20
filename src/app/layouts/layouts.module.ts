@@ -8,6 +8,7 @@ import { LayoutsComponent } from './layouts.component';
 import { PrimengModule } from '../primeng/primeng.module';
 import { ServicesComponent } from './services-section/services-section.component';
 import { ContacMeSectionComponent } from './contac-me-section/contac-me-section.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContacMeSectionComponent } from './contac-me-section/contac-me-section.
   ],
   imports: [
     ComponentsModule,
-    PrimengModule
+    PrimengModule,
+    CommonModule,
   ],
   exports: [
     LayoutsComponent,

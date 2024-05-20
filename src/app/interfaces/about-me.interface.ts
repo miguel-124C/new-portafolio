@@ -1,5 +1,6 @@
 export interface AboutMe {
-    title:          string;
-    paragraph:      string;
-    icon: string;
+    date      : string;
+    title     : string;
+    subtitle  : string;
+    href?     : string;
 }

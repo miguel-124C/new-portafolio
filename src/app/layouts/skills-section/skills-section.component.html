@@ -1,17 +1,20 @@
 
 <div id="conocimiento">
 
-    <div class="contain-carrousel">
-        <div>
-            <h2>Conocimiento</h2>
+    <div class="container">
+        <div class="title">
+            <h1 class="text-linear">Actitudes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt commodi fuga doloribus error illo, tempore provident omnis vero atque ut temporibus perferendis voluptatibus vel? Cum quaerat ex ipsam quo!</p>
         </div>
-        <c-carrousel [skills]="skills"></c-carrousel>
-    </div>
-
-    <div class="list-estadistica">
-        <div *ngFor="let skill of skills" class="estadistica">
-            <c-slider-range
-            [skill]="skill"></c-slider-range>
+        <div class="containt-skills">
+            <ul>
+                <li *ngFor="let skill of skills">
+                    <div>
+                        <i [class]="skill.icon"></i>
+                    </div>
+                    <h4>{{ skill.nameSkill }}</h4>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

@@ -14,7 +14,7 @@
 
     --yellow-500: #e7c576 !important;
     --yellow-600: #FFC100 !important;
-    --yellow-700: #FF8A08 !important;
+    --yellow-700: #d0a61134 !important;
 
     --width-nav-bar: 120px;
 
@@ -43,6 +43,12 @@ body {
     padding-right: calc(var(--bs-gutter-x)* .5);
     padding-left: calc(var(--bs-gutter-x)* .5);
     margin: 0 auto;
+}
+
+.text-linear{
+    background: linear-gradient(to right, var(--yellow-400) 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 576px){
     .container{

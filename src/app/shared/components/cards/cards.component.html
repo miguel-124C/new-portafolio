@@ -1,7 +1,9 @@
 <div class="cards">
+    <span> {{ data.date }} </span>
     <h2 class="title">
-        <i [class]="cards.icon"></i>
-        {{ cards.title }}
+        {{ data.title }}
     </h2>
-    <p class="paragraph" #desc></p>
+    <p>
+        {{ data.subtitle }}
+    </p>
 </div>
