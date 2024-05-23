@@ -2,7 +2,6 @@
 
 export interface Skill {
     nameSkill:      string,
-    icon:       string,
+    srcImage:       string,
     percent:    number,
-    color?: string;
 }

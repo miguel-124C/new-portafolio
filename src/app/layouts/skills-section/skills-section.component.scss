@@ -1,9 +1,7 @@
-
 #conocimiento{
-    padding: var(--width-nav-bar) 0;
+    padding-top: var(--width-nav-bar);
     color: #fff;
     background: var(--black-700);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,18 +15,91 @@
             text-align: center;
             font-size: 2.5rem;
         }
-        p{ width: 55%; }
+        p{ width: 70%; }
     }
     .containt-skills{
-        margin-top: 35px;
+        margin: 40px 0;
         width: 100%;
         ul{
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 3rem;
             flex-wrap: wrap;
+
             li{
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                gap: 14px;
+
+                .contain-skill{
+                    overflow: hidden;
+                    position: relative;
+                    border: 3px solid var(--black-500);
+                    border-radius: 10px;
+                    filter: grayscale(1);
+                    transition: all .4s;
+
+                    div{
+                        padding: 1.50rem;
+
+                        img{
+                            width: 75px;
+                            height: 75px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    span{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 1.3em;
+                    }
+                }
                 
+                &:hover {
+                    h4{ color: var(--yellow-600); }
+                    .contain-skill{
+                        filter: grayscale(0);
+                        border-color: var(--yellow-600);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #conocimiento{
+        .title{ p{ width: 100%; } }
+        .containt-skills{
+            margin: 40px 0;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+
+                li{
+                    gap: 5px;
+                    .contain-skill{
+                        div{
+                            padding: .9rem;
+                            img{
+                                width: 70px;
+                                height: 70px;
+                                object-fit: contain;
+                            }
+                        }
+                        span{ font-size: .85em; }   
+                    }
+                    h4{ font-size: .80em; }
+                }
             }
         }
     }

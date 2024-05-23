@@ -8,38 +8,47 @@ import { Skill } from 'src/app/interfaces/skill.interface';
 })
 export class SkillsComponent {
 
+  private classSizeIcon = 'fa-2xl';
+  private pathImage: string = 'assets/img/skill'
+
   public skills: Skill[] = [
     {
-      nameSkill:'Html',
-      percent: 95,
-      icon: 'fa-brands fa-html5',
-      color: 'rgb(221, 122, 0)'
+      nameSkill:'HTML',
+      percent: 96,
+      srcImage: `${this.pathImage}/html.png`,
     },{
-      nameSkill:'Css',
-      percent: 85,
-      icon: 'fa-brands fa-css3-alt',
-      color: '#25f'
+      nameSkill:'CSS',
+      percent: 87,
+      srcImage: `${this.pathImage}/css.png`,
     },{
-      nameSkill:'Js - Ts',
-      percent: 75,
-      icon: 'fa-brands fa-js',
-      color: 'yellow'
+      nameSkill:'JAVASCRIPT',
+      percent: 90,
+      srcImage: `${this.pathImage}/javascript.png`,
     },{
-      nameSkill:'Angular',
-      percent: 70,
-      icon: 'fa-brands fa-angular',
-      color: 'red'
+      nameSkill:'ANGULAR',
+      percent: 80,
+      srcImage: `${this.pathImage}/angular.png`,
     },{
-      nameSkill:'Git - GitHub',
-      percent: 65,
-      icon: 'fa-brands fa-github',
-      color: '#fff'
+      nameSkill:'GitHub',
+      percent: 68,
+      srcImage: `${this.pathImage}/github.png`,
     },{
-      nameSkill:'PostgreSQL',
-      percent: 45,
-      icon: 'fa-solid fa-database',
-      color: '#b9b9b9'
-    }
+      nameSkill:'POSTGRES',
+      percent: 58,
+      srcImage: `${this.pathImage}/postgresql.png`,
+    },{
+      nameSkill: 'JAVA',
+      percent: 55,
+      srcImage: `${this.pathImage}/java.png`,
+    },{
+      nameSkill: 'NODE.JS',
+      percent: 62,
+      srcImage: `${this.pathImage}/nodejs.png`,
+    },{
+      nameSkill: 'C#',
+      percent: 51,
+      srcImage: `${this.pathImage}/c-sharp.png`,
+    },
 
   ];
 

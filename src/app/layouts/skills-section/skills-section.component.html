@@ -9,8 +9,11 @@
         <div class="containt-skills">
             <ul>
                 <li *ngFor="let skill of skills">
-                    <div>
-                        <i [class]="skill.icon"></i>
+                    <div class="contain-skill">
+                        <div>
+                            <img [src]="skill.srcImage" alt="">
+                        </div>
+                        <span> {{ skill.percent }}% </span>
                     </div>
                     <h4>{{ skill.nameSkill }}</h4>
                 </li>
