@@ -1,37 +1,26 @@
-
 <div class="contain">
+    <div class="container">
 
-    <h1 class="text-6xl">Proyectos</h1>
+        <div class="title">
+            <h1 class="text-linear">Proyectos</h1>
+            <p>
+                Proyectos hechos personalmente. Con la idea de poner en practica lo aprendido.
+            </p>
+        </div>
     
-    <hr>
-    <h2 class="text-4xl p-4 text-center">Sin Frameworks</h2>
-    <hr>
+        <div class="containGallery">
+            <div class="filters">
+                <ul>
+                    <li>Todos</li>
+                    <li>Juegos</li>
+                    <li>Apps</li>
+                </ul>
+            </div>
 
-    <div class="containGallery">
-        <div *ngFor="let basico of proyectsBasicos">
-            <c-galeria [proyect]="basico"></c-galeria>
+            <div *ngFor="let proyect of listProyects">
+                <c-galeria [proyect]="proyect"></c-galeria>
+            </div>
         </div>
-    </div>
-
-    <hr>
-    <h2 class="text-4xl p-4 text-center">Con Framework (Angular)</h2>
-    <hr>
-
-    <div class="containGallery">
-        <div *ngFor="let avanzado of proyectsIntermedio">
-            <c-galeria [proyect]="avanzado"></c-galeria>
-        </div>
-    </div>
-
-
-    <hr>
-    <h2 class="text-4xl p-4 text-center">Proyectos completos</h2>
-    <hr>
-
-    <div class="containGallery">
-        <div *ngFor="let avanzado of proyectsAvanzado">
-            <c-galeria [proyect]="avanzado"></c-galeria>
-        </div>
-    </div>
-
+    
+    </div>    
 </div>

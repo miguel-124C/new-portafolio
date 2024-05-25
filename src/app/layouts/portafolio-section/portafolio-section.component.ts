@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Avanzado, Basicos, Intermedio } from 'db/db-proyects';
+import { Proyects } from 'db/db-proyects';
 import { Galeria } from 'src/app/interfaces/imagen.interface';
+import { Wokrs } from 'src/app/interfaces/works.interface';
 
 @Component({
   selector: 'app-portafolio',
@@ -9,8 +10,6 @@ import { Galeria } from 'src/app/interfaces/imagen.interface';
 })
 export class PortafolioComponent {
 
-  proyectsBasicos: Galeria[] = Basicos;
-  proyectsIntermedio: Galeria[] = Intermedio;
-  proyectsAvanzado: Galeria[] = Avanzado;
+  listProyects: Wokrs[] = Proyects;
 
 }

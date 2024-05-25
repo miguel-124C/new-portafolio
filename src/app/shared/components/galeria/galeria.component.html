@@ -1,10 +1,16 @@
 <div id="container">
     <h1>{{ proyect.name }}</h1>
     <div class="contain-card">
-        <img [src]="proyect.image" alt="">
+        <img [src]="proyect.srcImg" alt="">
         <span>
-            <p>{{ proyect.desc }}</p>
-            <a [href]="proyect.href" target="_blank">Ir al sitio</a>
+            <button class="bg-green-500">
+                <i class="fa-solid fa-code"></i>
+                <a class="pl-2" [href]="proyect.hrefCode">Código</a>
+            </button>
+            <button class="bg-blue-500">
+                <i class="fa-solid fa-film"></i>
+                <a class="pl-2" [href]="proyect.hrefDemo" target="_blank">Demo</a>
+            </button>
         </span>
     </div>
 </div>

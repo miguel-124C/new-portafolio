@@ -1,5 +1,6 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Galeria } from 'src/app/interfaces/imagen.interface';
+import { Wokrs } from 'src/app/interfaces/works.interface';
 
 @Component({
   selector: 'c-galeria',
@@ -12,7 +13,7 @@ export class GaleriaComponent implements OnInit {
   }
 
   @Input()
-  public proyect!: Galeria;
+  public proyect!: Wokrs;
 
   sizeProject: number = 600;
 

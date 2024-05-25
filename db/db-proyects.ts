@@ -1,106 +1,99 @@
-import { Galeria } from "src/app/interfaces/imagen.interface";
+import { Wokrs } from "src/app/interfaces/works.interface";
 
-export const Basicos: Galeria[] = [
+export const Proyects: Wokrs[] = [
   {
-    image:'assets/img/1.png',
-    desc: `Tiene las funcionalidades de todo reloj: cuenta con cronometro, temporizador, reloj, y alarmas.
-        Hice propiamente un crud no persistente para la parte de alarmas.`,
+    srcImg:'assets/img/1.png',
     name:'RelojApp',
-    href:'https://miguel-124c.github.io/Cronometro-Alarma/'
+    hrefDemo:'https://miguel-124c.github.io/Cronometro-Alarma/',
+    hrefCode: ''
   },{
-    image:'assets/img/2.png',
-    desc: `Tiene un bonito efecto al cambiar de colores cada cierto tiempo.`,
+    srcImg:'assets/img/2.png',
+    
     name:'RelojRgb',
-    href:'https://miguel-124c.github.io/RelojRgb/'
+    hrefDemo:'https://miguel-124c.github.io/RelojRgb/',
+    hrefCode: ''
   },{
-    image:'assets/img/3.png',      
-    desc: 'Juego que trata de seguir el ritmo. Sumando puntos cada que acertamos el ritmo',
-    name:'Sigue el ritmo',
-    href:'https://miguel-124c.github.io/Memoriza-la-cancion/'
+    srcImg:'assets/img/3.png',      
+    
+    name:'Ritmo',
+    hrefDemo:'https://miguel-124c.github.io/Memoriza-la-cancion/',
+    hrefCode: ''
   },{
-    image:'assets/img/4.png',      
-    desc: `Juego de Sudoku, tiene solo 3 intentos, trate de hacerlo con buenos diseños... no es muy intuitivo
-          genera toda la respuesta al inicio`,
+    srcImg:'assets/img/4.png', 
     name:'Sudoku',
-    href:'https://miguel-124c.github.io/Sudoku/'
+    hrefDemo:'https://miguel-124c.github.io/Sudoku/',
+    hrefCode: ''
   },{
-    image:'assets/img/5.png',      
-    desc: 'Buscador de peliculas, (use la Api omdbapi)',
+    srcImg:'assets/img/5.png',      
+    
     name:'Pelis',
-    href:'https://miguel-124c.github.io/Info-Movies/'
+    hrefDemo:'https://miguel-124c.github.io/Info-Movies/',
+    hrefCode: ''
   },{
-    image:'assets/img/6.png',      
-    desc: 'CRUD hecho sin base de datos, solamente es local, no es persistente ni nada de eso. En mis inicios de conocer todo sobre base de datos hice este proyecto',
-    name:'List Task',
-    href:'https://miguel-124c.github.io/CRUD-Lista-de-tareas/'
+    srcImg:'assets/img/6.png',
+    name:'ListTask',
+    hrefDemo:'https://miguel-124c.github.io/CRUD-Lista-de-tareas/',
+    hrefCode: ''
   },{
-    image:'assets/img/7.png',      
-    desc: 'Calendario que muestra todos los meses del año actual. Muestra la fecha actual',
+    srcImg:'assets/img/7.png',      
+    
     name:'Calendario',
-    href:'https://miguel-124c.github.io/Calendario-Object-Date-/'
+    hrefDemo:'https://miguel-124c.github.io/Calendario-Object-Date-/',
+    hrefCode: ''
   },{
-    image:'assets/img/8.png',      
-    desc: 'Challenge propuesto en la formacion de Alura Latam en la que estuve, logré hacer el diseño basado en Figma.',
+    srcImg:'assets/img/8.png',      
+    
     name:'Encriptador',
-    href:'https://miguel-124c.github.io/Encriptador-Alura/'
+    hrefDemo:'https://miguel-124c.github.io/Encriptador-Alura/',
+    hrefCode: ''
   },{
-    image:'assets/img/9.png',
-    desc: 'Trae los datos meteorologicos de donde te encuentres. También muestra los datos del tiempo de los proximos 5 días',
-    name:'Datos del clima',
-    href:'https://miguel-124c.github.io/datosMeteorologicas/'
+    srcImg:'assets/img/9.png',
+    
+    name:'Clima',
+    hrefDemo:'https://miguel-124c.github.io/datosMeteorologicas/',
+    hrefCode: ''
   },{
-    image: 'assets/img/10.png',
-    desc: 'Proyecto final del curso de Sisco de JavaScript de Cisco',
-    name: 'Api Rick and Morty',
-    href: 'https://miguel-124c.github.io/ProyectoCursoDeSisco/'
+    srcImg: 'assets/img/10.png',
+    
+    name: 'Rick & Morty',
+    hrefDemo: 'https://miguel-124c.github.io/ProyectoCursoDeSisco/',
+    hrefCode: ''
   },{
-    image: 'assets/img/11.png',
-    desc: 'Juego que consiste en adivinar un número random en un cierto tiempo, tiene dificultades que limitan el número de intentos',
-    name: 'Acierta el numero',
-    href: 'https://miguel-124c.github.io/Random-number/'
+    srcImg: 'assets/img/11.png',
+    
+    name: 'Numero',
+    hrefDemo: 'https://miguel-124c.github.io/Random-number/',
+    hrefCode: ''
   },{
-    image: 'assets/img/12.png',
-    desc: 'Calculadora hecha con Clases y aplicando la programación orientada a Objectos (POO)',
+    srcImg: 'assets/img/12.png',
+    
     name: 'Calculadora',
-    href: 'https://miguel-124c.github.io/Calculadora/'
-  }
-];
-
-export const Intermedio: Galeria[] = [
-  {
-    image:'assets/img/gifts.png',
-    desc: `App hecha en el curso de Udemy. Aprendi muchas cosas, como, el manejar
-      el LocalStorage, no sabia de su existencia, tambien de como se consumen las Api
-      en Angular`,
+    hrefDemo: 'https://miguel-124c.github.io/Calculadora/',
+    hrefCode: ''
+  },{
+    srcImg:'assets/img/gifts.png',
     name:'Gifts App',
-    href:'https://giftsa44.netlify.app'
+    hrefDemo:'https://giftsa44.netlify.app',
+    hrefCode: ''
   },{
-    image:'assets/img/country.png',
-    desc: `En este proyecto consumi una API y comprendi mas sobre las rutas en Angular,
-    también más sobre BootStrap`,
+    srcImg:'assets/img/country.png',
     name:'Country App',
-    href:'https://countries-app4.netlify.app/countries/by-capital'
+    hrefDemo:'https://countries-app4.netlify.app/countries/by-capital',
+    hrefCode: ''
   },{
-    image:'assets/img/conversores.png',
-    desc: `App que hace varias conversiones... la que mas destaco es la de modenas,
-    ya que use una API.`,
+    srcImg:'assets/img/conversores.png',
     name:'Conversores',
-    href:'https://coversores.netlify.app/conversor/monedas'
+    hrefDemo:'https://coversores.netlify.app/conversor/monedas',
+    hrefCode: ''
   },{
-    image:'assets/img/maps.png',      
-    desc: `Proyecto hecho en el curso de Udemy de Angular, conocí conceptos sobre los mapas,
-    usando MapBox, sobre los marcadores, el zoom y algunos eventos`,
+    srcImg:'assets/img/maps.png',
     name:'Maps App',
-    href:'https://mapsapplication.netlify.app/maps/fullScreen'
-  },
-];
-
-export const Avanzado: Galeria[] = [
-  {
-    image: 'assets/img/13.png',
-    desc: 'CRUD de alarmas basado en el proyecto anterior, le añadí base de datos con PostGres y Backend con Node.js.'+
-    ' Solo me enfoque en hacer la parte del CRUD',
+    hrefDemo:'https://mapsapplication.netlify.app/maps/fullScreen',
+    hrefCode: ''
+  },{
+    srcImg: 'assets/img/13.png',
     name: 'AppReloj',
-    href: 'https://app-reloj.netlify.app/alarma',
-  }
+    hrefDemo: 'https://app-reloj.netlify.app/alarma',
+    hrefCode: ''
+  },
 ];
