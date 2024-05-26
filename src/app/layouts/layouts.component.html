@@ -1,4 +1,7 @@
-<div>
+<div class="body">
+  <div class="header-fixed fadein" *ngIf="showHeaderFixed">
+    <app-header/>
+  </div>
   <app-home id="home"></app-home>
 
   <!-- <app-services id="service" [listServices]="listService"></app-services> -->

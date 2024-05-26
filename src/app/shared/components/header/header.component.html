@@ -1,19 +1,21 @@
-<header class="container">
-  <nav>
-    <div class="email-content">
-      <i>M</i>
-      <a [href]="hrefGmail">
-        {{ gmail }}
-      </a>
-    </div>
-
-    <ul>
-      <li *ngFor="let title of getListTitlesHeader">
-        <a [href]="title.href">
-          {{ title.name }}
-          <i [class]="title.icon"></i>
+<header>
+  <div class="container">
+    <nav>
+      <div class="email-content">
+        <a href="/" class="logo">M</a>
+        <a [href]="hrefGmail">
+          {{ gmail }}
         </a>
-      </li>
-    </ul>
-  </nav>
+      </div>
+  
+      <ul>
+        <li *ngFor="let title of getListTitlesHeader">
+          <a [href]="title.href">
+            {{ title.name }}
+            <i [class]="title.icon"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>

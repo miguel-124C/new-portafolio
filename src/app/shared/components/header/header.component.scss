@@ -13,8 +13,8 @@ header{
     color: white;
 
     .email-content{
-
-      i{
+      a{ color: white; }
+      .logo{
         font-size: 2em;
         font-family: var(--ff-logo);
         margin-right: 15px;

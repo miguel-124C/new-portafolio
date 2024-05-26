@@ -3,7 +3,7 @@ $yellow : var(--yellow-400);
 
 .content{
     background: $black;
-    padding-top: 90px;
+    padding-top: var(--width-nav-bar);
     
     .columns{
         display: grid;
