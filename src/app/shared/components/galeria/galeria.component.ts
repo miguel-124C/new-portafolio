@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Galeria } from 'src/app/interfaces/imagen.interface';
 import { Wokrs } from 'src/app/interfaces/works.interface';
 
 @Component({

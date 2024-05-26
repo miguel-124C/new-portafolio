@@ -1,77 +1,95 @@
 import { Wokrs } from "src/app/interfaces/works.interface";
+import { UrlPersonals, nameGithub } from "./dataPersonal";
+import { _angular, _bootstrap, _css, _html, _js, _nest, _sass, _ts } from "./styleTecnologys";
 
-const pathImages = 'assets/img/proyects/';
+const pathImages = 'assets/img/proyects';
+const pathGitHubPage = `https://${nameGithub}.github.io`;
+const pathGithubCode = UrlPersonals.gitHub;
 
 export const Proyects: Wokrs[] = [
   {
-    srcImg:`${pathImages}app-alarma-js.png`,
+    srcImg:`${pathImages}/app-alarma-js.png`,
     name:'RelojApp',
-    hrefDemo:'https://miguel-124c.github.io/Cronometro-Alarma/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/Cronometro-Alarma`,
+    hrefCode: `${pathGithubCode}/Cronometro-Alarma`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}relojRgb.png`,
+    srcImg:`${pathImages}/relojRgb.png`,
     name:'RelojRgb',
-    hrefDemo:'https://miguel-124c.github.io/RelojRgb/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/RelojRgb`,
+    hrefCode: `${pathGithubCode}/RelojRgb`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}ritmo.png`,
+    srcImg:`${pathImages}/ritmo.png`,
     name:'Ritmo',
-    hrefDemo:'https://miguel-124c.github.io/Memoriza-la-cancion/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/Memoriza-la-cancion`,
+    hrefCode: `${pathGithubCode}/Memoriza-la-cancion`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}sudoku.png`,
+    srcImg:`${pathImages}/sudoku.png`,
     name:'Sudoku',
-    hrefDemo:'https://miguel-124c.github.io/Sudoku/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/Sudoku`,
+    hrefCode: `${pathGithubCode}/Sudoku`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}pelis.png`,
+    srcImg:`${pathImages}/pelis.png`,
     name:'Pelis',
-    hrefDemo:'https://miguel-124c.github.io/Info-Movies/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/Info-Movies`,
+    hrefCode: `${pathGithubCode}/Info-Movies`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}encriptador.png`,
+    srcImg:`${pathImages}/encriptador.png`,
     name:'Encriptador',
-    hrefDemo:'https://miguel-124c.github.io/Encriptador-Alura/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/Encriptador-Alura`,
+    hrefCode: `${pathGithubCode}/Encriptador-Alura`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}clima.png`,
+    srcImg:`${pathImages}/clima.png`,
     name:'Clima',
-    hrefDemo:'https://miguel-124c.github.io/datosMeteorologicas/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/datosMeteorologicas`,
+    hrefCode: `${pathGithubCode}/datosMeteorologicas`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}rick-morty.png`,
+    srcImg:`${pathImages}/rick-morty.png`,
     name: 'Rick & Morty',
-    hrefDemo: 'https://miguel-124c.github.io/ProyectoCursoDeSisco/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/ProyectoCursoDeSisco`,
+    hrefCode: `${pathGithubCode}/ProyectoCursoDeSisco`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}numero.png`,
+    srcImg:`${pathImages}/numero.png`,
     name: 'Numero',
-    hrefDemo: 'https://miguel-124c.github.io/Random-number/',
-    hrefCode: ''
+    hrefDemo:`${pathGitHubPage}/Random-number`,
+    hrefCode: `${pathGithubCode}/Random-number`,
+    useTecnology: [ _html, _css, _js, ],
   },{
-    srcImg:`${pathImages}gifts.png`,
+    srcImg:`${pathImages}/gifts.png`,
     name:'Gifts App',
     hrefDemo:'https://giftsa44.netlify.app',
-    hrefCode: ''
+    hrefCode: `${pathGithubCode}/gifs-app`,
+    useTecnology: [ _angular, _ts, _bootstrap ],
   },{
-    srcImg:`${pathImages}country.png`,
+    srcImg:`${pathImages}/country.png`,
     name:'Country App',
     hrefDemo:'https://countries-app4.netlify.app/countries/by-capital',
-    hrefCode: ''
+    hrefCode: `${pathGithubCode}/countryApp`,
+    useTecnology: [ _angular, _ts, _bootstrap ],
   },{
-    srcImg:`${pathImages}conversores.png`,
+    srcImg:`${pathImages}/conversores.png`,
     name:'Conversores',
     hrefDemo:'https://coversores.netlify.app/conversor/monedas',
-    hrefCode: ''
+    hrefCode: `${pathGithubCode}/ConversorTs`,
+    useTecnology: [ _angular, _ts, _sass ],
   },{
-    srcImg:`${pathImages}maps.png`,
+    srcImg:`${pathImages}/maps.png`,
     name:'Maps App',
     hrefDemo:'https://mapsapplication.netlify.app/maps/fullScreen',
-    hrefCode: ''
+    hrefCode: `${pathGithubCode}/09-mapsApp`,
+    useTecnology: [ _angular, _ts, _bootstrap ],
   },{
-    srcImg:`${pathImages}app-reloj-angular.png`,
+    srcImg:`${pathImages}/app-reloj-angular.png`,
     name: 'AppReloj',
     hrefDemo: 'https://app-reloj.netlify.app/alarma',
-    hrefCode: ''
+    hrefCode: `${pathGithubCode}/AppReloj-Front-End`,
+    useTecnology: [ _angular, _ts, _sass, _nest ],
   },
 ];

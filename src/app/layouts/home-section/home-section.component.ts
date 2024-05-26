@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UrlPersonals } from 'db/dataPersonal';
 import { Redes } from 'src/app/interfaces/redes.interface';
 
 @Component({
@@ -10,13 +11,13 @@ export class HomeComponent {
 
   redes: Redes[] = [
     {
-      href: 'https://wa.me/59178071967',
+      href: UrlPersonals.whatsApp,
       icon: 'pi pi-whatsapp',
     },{
-      href: 'https://github.com/miguel-124C',
+      href: UrlPersonals.gitHub,
       icon: 'pi pi-github',
     },{
-      href: 'https://www.linkedin.com/in/miguel-cuellar-013a96258/',
+      href: UrlPersonals.linkEdin,
       icon: 'pi pi-linkedin',
     },
   ];

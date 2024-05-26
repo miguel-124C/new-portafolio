@@ -19,40 +19,56 @@
             object-fit: cover;
         }
     
-        span{
+        .content-info{
             color: #fff;
             position: absolute;
             bottom: -100%;
             left: 0;
-            background: #00000081;
+            background: #000000d2;
             width: 100%;
             height: 100%;
             transition: .45s;
+            padding: 10px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: flex-end;
-
-            button{
-                position: relative;
-                border-radius: 5px;
-                padding: 10px;
-                margin: 10px;
-                overflow: hidden;
-                cursor: pointer;
-                transition: all .45s;
-    
-                a, i{ color: #fff; }
-
-                &:hover{
-                    filter: grayscale(.7);
+            
+            .tecnologys{
+                ul{
+                    margin-top: 5px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    li{
+                        border-radius: 3px;
+                        background: #000000;
+                        padding: 2px;
+                    }
+                    
+                }
+            }
+            .buttons{
+                width: 100%;
+                a{
+                    button{
+                        margin-top: 5px;
+                        position: relative;
+                        border-radius: 5px;
+                        padding: 10px 0;
+                        width: 100%;
+                        overflow: hidden;
+                        cursor: pointer;
+                        transition: all .45s;
+                        color: #fff;
+                    }
                 }
             }
         }
     }
-    &:hover h1{
+    &:hover h2{
         text-shadow: -10px 10px 15px var(--yellow-600);
     }
-    &:hover .contain-card span {
+    &:hover .contain-card .content-info {
         transform: translateY(-100%);
     }
     &:hover .contain-card {

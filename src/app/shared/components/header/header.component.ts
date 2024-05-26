@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UrlPersonals } from 'db/dataPersonal';
 import { TitleHeader } from 'src/app/interfaces/titles-header.interface';
 
 @Component({
@@ -6,7 +7,14 @@ import { TitleHeader } from 'src/app/interfaces/titles-header.interface';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  
+  public hrefGmail = '';
+  public gmail = UrlPersonals.gmail;
+  
+  ngOnInit(): void {
+    this.hrefGmail = `mailto:${this.gmail}`;
+  }
 
   private listTitlesHeader: TitleHeader[] = [
     { name: 'About Me', href:'#about-me', icon:'' },
