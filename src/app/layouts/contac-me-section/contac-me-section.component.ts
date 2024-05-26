@@ -1,9 +1,12 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contac-me-section',
   templateUrl: './contac-me-section.component.html',
-  styleUrls: ['./contac-me-section.component.css'],
+  styleUrls: ['./contac-me-section.component.scss'],
 })
-export class ContacMeSectionComponent { }
+export class ContacMeSectionComponent {
+
+
+
+}

@@ -1,6 +1,7 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, inject } from '@angular/core';
 import { ListServices } from '../interfaces/services-list.interface';
 import { fromEvent, map } from 'rxjs';
+import { IndexDirectionService } from '../services/index-position.service';
 
 interface EventMouse {
   target:{
@@ -36,8 +37,10 @@ export class LayoutsComponent implements AfterViewInit {
   //   },
   // ];
 
-  showHeaderIn: number = 500;
-  showHeaderFixed: boolean = false;
+  public showHeaderIn: number = 500;
+  public showHeaderFixed: boolean = false;
+
+  private indexPositionService = inject( IndexDirectionService );
 
   constructor() { }
   
@@ -50,10 +53,22 @@ export class LayoutsComponent implements AfterViewInit {
     fromEvent<EventMouse>(document, 'scroll')
     .pipe(
       map( ({target}) => (target.documentElement) ),
-      map( ({scrollTop})=> scrollTop )
     ).subscribe({
-      next: (scrollTop)=> {
+      next: ({scrollTop, clientHeight, scrollHeight})=> {
         this.showHeaderFixed = (scrollTop > this.showHeaderIn);
+
+        const sections: NodeListOf<HTMLElement> = document.querySelectorAll('.page');
+
+        sections.forEach( (section, index)=>{
+          const sectionTop = section.offsetTop; // Distancia entre el viewPort y el elemento
+          const sectionHeight = section.getBoundingClientRect().height; // Tamaño del elemento
+          const scrollPosition = scrollTop; // position del scroll
+          const zonaSection = sectionTop + sectionHeight; // Rango del elemento
+
+          if (scrollPosition >= sectionTop && scrollPosition < zonaSection) {
+            this.indexPositionService.currentIndex.set( index );
+          }
+        });
       }
     });
   }

@@ -24,12 +24,21 @@ header{
     ul{
       display: flex;
       gap: 1rem;
-
-      li{
       
+      li{
+        position: relative;
         a{
           color: white;
           text-decoration: none;
+        }
+        .active{
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background: var(--yellow-500);
         }
       }
     }

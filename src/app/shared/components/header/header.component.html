@@ -9,11 +9,13 @@
       </div>
   
       <ul>
-        <li *ngFor="let title of getListTitlesHeader">
+        <li *ngFor="let title of getListTitlesHeader; let i = index"
+          class="header-li">
           <a [href]="title.href">
             {{ title.name }}
             <i [class]="title.icon"></i>
           </a>
+          <span></span>
         </li>
       </ul>
     </nav>
