@@ -2,6 +2,12 @@ import { Injectable, OnInit, computed, effect, signal } from '@angular/core';
 
 type DirectionAnimation = 'IZQUIERDA' | 'DERECHA';
 
+interface ParamAnimation {
+  animation: string;
+  current: number,
+  former: number,
+}
+
 @Injectable({providedIn: 'root'})
 export class IndexDirectionService {
   
@@ -19,8 +25,4 @@ export class IndexDirectionService {
     return (this.currentIndex() > this.formerIndex()) ? 'DERECHA' : 'IZQUIERDA';
   });
   
-  private getAnimationString(){
-    
-  }
-
 }

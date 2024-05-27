@@ -66,6 +66,7 @@ export class LayoutsComponent implements AfterViewInit {
           const zonaSection = sectionTop + sectionHeight; // Rango del elemento
 
           if (scrollPosition >= sectionTop && scrollPosition < zonaSection) {
+            console.log(scrollPosition, sectionTop, zonaSection)
             this.indexPositionService.currentIndex.set( index );
           }
         });

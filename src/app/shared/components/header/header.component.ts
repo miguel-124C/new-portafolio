@@ -9,15 +9,23 @@ import { IndexDirectionService } from 'src/app/services/index-position.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit{
-
+export class HeaderComponent implements OnInit, AfterViewInit{
+  private indexDirectionService = inject( IndexDirectionService );
+  
+  public list?: NodeListOf<HTMLElement>;
   public hrefGmail = '';
   public gmail = UrlPersonals.gmail;
   
-  private indexDirectionService = inject( IndexDirectionService );
+  public current = computed(()=> this.indexDirectionService.currentIndex());
+  public former  = computed(()=> this.indexDirectionService.formerIndex());
+  public direction  = computed(()=> this.indexDirectionService.direction());
   
   ngOnInit(): void {
     this.hrefGmail = `mailto:${this.gmail}`;
+  }
+  
+  ngAfterViewInit(): void {
+    this.list = document.querySelectorAll<HTMLElement>('.header-li');
   }
 
   private listTitlesHeader: TitleHeader[] = [
@@ -30,23 +38,5 @@ export class HeaderComponent implements OnInit{
   public get getListTitlesHeader(): TitleHeader[]{
     return this.listTitlesHeader;
   }
-
-  // private animationByDirection( direction: DirectionAnimation ){
-
-  // }
-
-  public addAnimation = effect(()=>{
-    const list = document.querySelectorAll<HTMLElement>('.header-li');
-    console.log(this.indexDirectionService.direction(), list)
-
-    list.forEach( (li, index) =>{
-      if ( index == this.indexDirectionService.currentIndex()) {
-        li.lastElementChild!.classList.add('active');
-        console.log(li.textContent)
-      }else{
-        li.lastElementChild!.classList.remove('active');
-      }
-    });
-  });
 
 }

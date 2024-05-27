@@ -31,10 +31,9 @@ header{
           color: white;
           text-decoration: none;
         }
-        .active{
+        span{
           position: absolute;
           content: "";
-          left: 0;
           bottom: 0;
           width: 0;
           height: 2px;
@@ -43,4 +42,33 @@ header{
       }
     }
   }
+}
+
+$durationAnimation: .3s;
+$timing: ease-out;
+
+.showRight{
+  left: 0;
+  animation: select $durationAnimation $timing normal both;
+}
+.showLeft{
+  right: 0;
+  animation: select $durationAnimation $timing normal both;
+}
+.hiddenRight{
+  right: 0;
+  animation: select2 $durationAnimation $timing normal backwards;
+}
+.hiddenLeft{
+  left: 0;
+  animation: select2 $durationAnimation $timing normal backwards;
+}
+
+@keyframes select {
+  0%  { width: 0; }
+  100%{ width: 100%; }
+}
+@keyframes select2 {
+  0%  { width: 100%; }
+  100%{ width: 0; }
 }

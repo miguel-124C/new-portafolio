@@ -15,7 +15,13 @@
             {{ title.name }}
             <i [class]="title.icon"></i>
           </a>
-          <span></span>
+          <span [ngClass]=" {
+              'showRight' : i == current() && direction() == 'DERECHA',
+              'showLeft' : i == current() && direction() == 'IZQUIERDA',
+              'hiddenRight' : i == former() && direction() == 'DERECHA',
+              'hiddenLeft' : i == former() && direction() == 'IZQUIERDA'
+            }">
+          </span>
         </li>
       </ul>
     </nav>
