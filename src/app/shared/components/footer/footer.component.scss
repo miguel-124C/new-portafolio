@@ -1,23 +1,6 @@
 footer{
   color: white;
-  border-top: 1px solid var(--blue-500);
   height: 250px;
   background: var(--black-600);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-
-  div{
-    display: grid;
-    align-items: center;
-
-    a{
-      color: var(--blue-500);
-      width: max-content;
-    }
-  }
-
-  .left{
-    justify-content: flex-end;
-  }
+  
 }
