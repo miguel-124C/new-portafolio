@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Wokrs } from 'src/app/interfaces/works.interface';
+import { Wokrs } from 'src/app/interfaces';
 
 @Component({
   selector: 'c-galeria',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Skill } from 'src/app/interfaces/skill.interface';
+import { Skill } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-skills',
@@ -8,7 +8,6 @@ import { Skill } from 'src/app/interfaces/skill.interface';
 })
 export class SkillsComponent {
 
-  private classSizeIcon = 'fa-2xl';
   private pathImage: string = 'assets/img/skill'
 
   public skills: Skill[] = [

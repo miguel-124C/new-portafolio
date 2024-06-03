@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ListServices } from 'src/app/interfaces/services-list.interface';
+import { ListServices } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-services',

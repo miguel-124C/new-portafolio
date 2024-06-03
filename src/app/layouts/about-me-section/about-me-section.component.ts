@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutMe } from 'src/app/interfaces/about-me.interface';
+import { AboutMe } from 'src/app/interfaces';
 
 interface DataPersonal {
   title: string;

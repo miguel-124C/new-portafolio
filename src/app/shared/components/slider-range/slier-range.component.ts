@@ -1,5 +1,5 @@
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { Skill } from 'src/app/interfaces/skill.interface';
+import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Skill } from 'src/app/interfaces';
 
 @Component({
   selector: 'c-slider-range',

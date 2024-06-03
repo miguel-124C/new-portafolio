@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { AboutMe } from 'src/app/interfaces/about-me.interface';
+import { Component, Input, } from '@angular/core';
+import { AboutMe } from 'src/app/interfaces';
 
 @Component({
   selector: 'c-cards',

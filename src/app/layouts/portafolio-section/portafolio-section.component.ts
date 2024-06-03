@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Proyects } from 'db/db-proyects';
-import { Galeria } from 'src/app/interfaces/imagen.interface';
-import { Wokrs } from 'src/app/interfaces/works.interface';
+import { Wokrs } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-portafolio',

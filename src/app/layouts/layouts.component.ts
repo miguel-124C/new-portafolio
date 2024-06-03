@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, inject } from '@angular/core';
-import { ListServices } from '../interfaces/services-list.interface';
 import { fromEvent, map } from 'rxjs';
-import { IndexDirectionService } from '../services/index-position.service';
+import { IndexDirectionService } from '../services';
 
 interface EventMouse {
   target:{
@@ -20,22 +19,6 @@ interface EventMouse {
 })
 
 export class LayoutsComponent implements AfterViewInit {
-
-  // public listService: ListServices[] = [
-  //   {
-  //     title: 'Diseño Responsive',
-  //     description: `Me especializo en hacer que una web sea responsive `
-  //   },{
-  //     title: 'Diseño UI',
-  //     description: `lfjaskldfj`
-  //   },{
-  //     title: 'API REST',
-  //     description: ``
-  //   },{
-  //     title: 'Reportes',
-  //     description: `Tengo experiencia en reportes con JasperReports`
-  //   },
-  // ];
 
   public showHeaderIn: number = 500;
   public showHeaderFixed: boolean = false;

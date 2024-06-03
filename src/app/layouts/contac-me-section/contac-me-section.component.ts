@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { GMAIL, PHONE, UrlPersonals } from 'db/dataPersonal';
-import { Redes } from 'src/app/interfaces/redes.interface';
+import { Redes } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-contac-me-section',

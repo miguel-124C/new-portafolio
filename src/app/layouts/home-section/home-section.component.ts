@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { UrlPersonals } from 'db/dataPersonal';
-import { Redes } from 'src/app/interfaces/redes.interface';
+import { Redes } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-home',
@@ -21,10 +21,5 @@ export class HomeComponent {
       icon: 'pi pi-linkedin',
     },
   ];
-
-  // {
-  //   href: 'mailto:mikicuellar20@gmail.com',
-  //   icon: 'fa-solid fa-envelope',
-  // }
 
 }

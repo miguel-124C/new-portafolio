@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Skill } from 'src/app/interfaces/skill.interface';
+import { Skill } from 'src/app/interfaces';
 
 @Component({
   selector: 'c-carrousel',

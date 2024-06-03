@@ -1,8 +1,7 @@
-import { Component, Input, OnInit, inject, computed, signal, AfterViewInit, effect } from '@angular/core';
+import { Component, OnInit, inject, computed, AfterViewInit, } from '@angular/core';
 import { GMAIL, UrlPersonals } from 'db/dataPersonal';
-import { fromEvent, interval } from 'rxjs';
-import { TitleHeader } from 'src/app/interfaces/titles-header.interface';
-import { IndexDirectionService } from 'src/app/services/index-position.service';
+import { TitleHeader } from 'src/app/interfaces';
+import { IndexDirectionService } from 'src/app/services';
 
 @Component({
   selector: 'app-header',
@@ -31,10 +30,10 @@ export class HeaderComponent implements OnInit, AfterViewInit{
   }
 
   private listTitlesHeader: TitleHeader[] = [
-    { name: 'About Me', href:'#about-me', icon:'' },
-    { name: 'Skills', href:'#skills', icon:'' },
-    { name: 'Works', href:'#portafolio', icon:'' },
-    { name: 'Contact', href:'#contact-me', icon:'' },
+    { name: 'About Me', href:'#about-me', },
+    { name: 'Skills', href:'#skills', },
+    { name: 'Works', href:'#portafolio', },
+    { name: 'Contact', href:'#contact-me', },
   ];
 
   public get getListTitlesHeader(): TitleHeader[]{
