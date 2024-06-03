@@ -1,4 +1,5 @@
 export interface Redes {
-    href:   string;
-    icon:   string;
+    href    : string;
+    icon    : string;
+    title?  : string;
 }

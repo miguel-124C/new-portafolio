@@ -1,9 +1,9 @@
 import { Wokrs } from "src/app/interfaces/works.interface";
-import { UrlPersonals, nameGithub } from "./dataPersonal";
+import { UrlPersonals, NAMEGITHUB } from "./dataPersonal";
 import { _angular, _bootstrap, _css, _html, _js, _nest, _sass, _ts } from "./styleTecnologys";
 
 const pathImages = 'assets/img/proyects';
-const pathGitHubPage = `https://${nameGithub}.github.io`;
+const pathGitHubPage = `https://${NAMEGITHUB}.github.io`;
 const pathGithubCode = UrlPersonals.gitHub;
 
 export const Proyects: Wokrs[] = [
