@@ -1,29 +1,37 @@
-<header>
-  <div class="container">
-    <nav>
-      <div class="email-content">
-        <a href="/" class="logo">M</a>
-        <a [href]="hrefGmail">
-          {{ gmail }}
-        </a>
-      </div>
-  
-      <ul>
-        <li *ngFor="let title of getListTitlesHeader; let i = index"
-          class="header-li">
-          <a [href]="title.href">
-            {{ title.name }}
-            <i [class]="title.icon"></i>
+<div>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="email-content">
+          <a href="/" class="logo">M</a>
+          <a [href]="hrefGmail">
+            {{ gmail }}
           </a>
-          <span [ngClass]=" {
-              'showRight' : i == current() && direction() == 'DERECHA',
-              'showLeft' : i == current() && direction() == 'IZQUIERDA',
-              'hiddenRight' : i == former() && direction() == 'DERECHA',
-              'hiddenLeft' : i == former() && direction() == 'IZQUIERDA'
-            }">
-          </span>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        </div>
+    
+        <ul #ulHeader>
+          <li *ngFor="let title of getListTitlesHeader; let i = index"
+            class="header-li">
+            <a [href]="title.href">
+              {{ title.name }}
+              <i [class]="title.icon"></i>
+            </a>
+            <span [ngClass]=" {
+                'showRight' : i == current() && direction() == 'DERECHA',
+                'showLeft' : i == current() && direction() == 'IZQUIERDA',
+                'hiddenRight' : i == former() && direction() == 'DERECHA',
+                'hiddenLeft' : i == former() && direction() == 'IZQUIERDA'
+              }">
+            </span>
+          </li>
+        </ul>
+
+        <span class="opencloseheader"
+          (click)="openCloseHeader( open, close, ulHeader )">
+          <i #open class="fa-solid fa-bars showIcon"></i>
+          <i #close class="fa-solid fa-xmark hiddenIcon"></i>
+        </span>
+      </nav>
+    </div>
+  </header>
+</div>

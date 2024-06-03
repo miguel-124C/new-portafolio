@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, inject, computed, signal, AfterViewInit, effect } from '@angular/core';
-import { UrlPersonals } from 'db/dataPersonal';
-import { interval } from 'rxjs';
+import { GMAIL, UrlPersonals } from 'db/dataPersonal';
+import { fromEvent, interval } from 'rxjs';
 import { TitleHeader } from 'src/app/interfaces/titles-header.interface';
 import { IndexDirectionService } from 'src/app/services/index-position.service';
 
@@ -14,14 +14,16 @@ export class HeaderComponent implements OnInit, AfterViewInit{
   
   public list?: NodeListOf<HTMLElement>;
   public hrefGmail = '';
-  public gmail = UrlPersonals.gmail;
+  public gmail = GMAIL;
   
   public current = computed(()=> this.indexDirectionService.currentIndex());
   public former  = computed(()=> this.indexDirectionService.formerIndex());
   public direction  = computed(()=> this.indexDirectionService.direction());
+
+  public headerIsOpen: boolean = false;
   
   ngOnInit(): void {
-    this.hrefGmail = `mailto:${this.gmail}`;
+    this.hrefGmail = UrlPersonals.gmail;
   }
   
   ngAfterViewInit(): void {
@@ -37,6 +39,31 @@ export class HeaderComponent implements OnInit, AfterViewInit{
 
   public get getListTitlesHeader(): TitleHeader[]{
     return this.listTitlesHeader;
+  }
+
+  openCloseHeader( elementOpen: HTMLElement, elementClose: HTMLElement, elementHeader: HTMLElement ){
+    this.headerIsOpen = !this.headerIsOpen;
+
+    if (this.headerIsOpen) {
+      elementClose.classList.remove('hiddenIcon');
+      elementClose.classList.add('showIcon');
+
+      elementOpen.classList.remove('showIcon');
+      elementOpen.classList.add('hiddenIcon');
+
+      elementHeader.classList.remove('hiddenHeader');
+      elementHeader.classList.add('showHeader');
+    }else{
+      elementOpen.classList.remove('hiddenIcon');
+      elementOpen.classList.add('showIcon');
+
+      elementClose.classList.remove('showIcon');
+      elementClose.classList.add('hiddenIcon');
+
+      elementHeader.classList.remove('showHeader');
+      elementHeader.classList.add('hiddenHeader');
+    }
+
   }
 
 }

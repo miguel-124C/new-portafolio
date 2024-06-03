@@ -4,6 +4,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99999;
 
   nav{
     width: 100%;
@@ -41,9 +42,57 @@ header{
         }
       }
     }
+    .opencloseheader{ display: none; }
   }
 }
 
+@media screen and (max-width: 770px) {
+  header{
+    background-color: var(--black-700);
+    nav{
+      .email-content{
+        a{ color: white; }
+        .logo{
+          font-size: 2em;
+          font-family: var(--ff-logo);
+          margin-right: 15px;
+        }
+      }
+      
+      ul{
+        background-color: var(--black-600);
+        position: absolute;
+        left: 0;
+        top: -100%;
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30% 0;
+        align-items: center;
+        z-index: 9999;
+      }
+      .opencloseheader{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        i{
+          font-size: 2em;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+// Animaciones
+// Mostrar que seccion esta seleccionada
 $durationAnimation: .3s;
 $timing: ease-out;
 
@@ -71,4 +120,63 @@ $timing: ease-out;
 @keyframes select2 {
   0%  { width: 100%; }
   100%{ width: 0; }
+}
+
+// Mostrar / ocultar iconos en header responsive
+.showIcon{
+  animation: showIcon .5s normal forwards;
+}
+.hiddenIcon{
+  animation: hiddenIcon .5s normal forwards;
+}
+
+@keyframes showIcon {
+  0%{
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+@keyframes hiddenIcon {
+  0%{
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(0);
+  }
+}
+
+
+// Mostrar / ocultar header responsive
+
+.showHeader{
+  animation: showHeader .5s normal forwards;
+}
+.hiddenHeader{
+  animation: hiddenHeader .5s normal forwards;
+}
+@keyframes showHeader {
+  0%{
+    top: -100%;
+    height: 0;
+  }
+  100%{
+    top: var(--width-nav-bar);
+    height: calc(100vh - var(--width-nav-bar));
+  }
+}
+@keyframes hiddenHeader {
+  0%{
+    top: var(--width-nav-bar);
+    height: calc(100vh - var(--width-nav-bar));
+  }
+  100%{
+    top: -100%;
+    height: 0;
+  }
 }
