@@ -9,6 +9,29 @@ $yellow : var(--yellow-400);
         display: grid;
         grid-template-columns: 50% 50%;
         position: relative;
+        .contain-cards{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    .certificates{
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        li{
+            border-radius: 10px;
+            background: var(--yellow-700);
+            padding: 8px 10px;
+            transition: .45s;
+            a{ color: #ffffff; }
+            
+            &:hover{
+                background: var(--yellow-400);
+                a{ color: #000000; }
+            }
+        }
     }
 }
 
@@ -23,11 +46,6 @@ $yellow : var(--yellow-400);
             color: $yellow;
         }
         h1{ font-size: 2.5em; }
-    }
-    .contain-cards{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
     }
 }
 

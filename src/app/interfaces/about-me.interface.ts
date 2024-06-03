@@ -1,6 +1,6 @@
 export interface AboutMe {
-    date      : string;
+    date?     : string;
     title     : string;
-    subtitle  : string;
+    subtitle? : string;
     href?     : string;
 }

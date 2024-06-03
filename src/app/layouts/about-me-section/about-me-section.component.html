@@ -21,13 +21,13 @@
                 <i class="fa-solid fa-certificate fa-2xl"></i>
                 <h1 class="text-linear">Certificados</h1>
             </div>
-            <div>
-                <ol>
-                    <li>
-                        Certificado
-                    </li>
-                </ol>
-            </div>
+            <ol class="certificates">
+                <li *ngFor="let item of certificates">
+                    <a [href]="item.href" target="_blank">
+                        {{ item.title }}
+                    </a>
+                </li>
+            </ol>
         </div>
     </div>
 
