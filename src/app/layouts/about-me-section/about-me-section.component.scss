@@ -21,16 +21,18 @@ $yellow : var(--yellow-400);
         gap: 1em;
         flex-wrap: wrap;
         li{
-            border-radius: 10px;
-            background: var(--yellow-700);
-            padding: 8px 10px;
-            transition: .45s;
-            a{ color: #ffffff; }
-            
-            &:hover{
-                background: var(--yellow-400);
-                a{ color: #000000; }
+            a{
+                transition: .45s;
+                background: var(--yellow-700);
+                color: #ffffff;
+                border-radius: 10px;
+                padding: 8px 10px;
+                &:hover{
+                    background: var(--yellow-400);
+                    color: #000000;
+                }
             }
+            
         }
     }
 }
