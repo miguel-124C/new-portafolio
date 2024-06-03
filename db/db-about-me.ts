@@ -35,7 +35,7 @@ export const EDUCATION: AboutMe[] = [
     href: 'https://app.aluracursos.com/user/mikicuellar20/program/5/certificate',
   },{
     date: '2023(Marzo) - 2023(Julio)',
-    title: 'Progrmación con JavaScript (Cisco)',
+    title: 'Programación con JavaScript (Cisco)',
     subtitle: 'Curso avanzado con JavaScript',
   },{
     date: '2023(Junio) - Presente',
