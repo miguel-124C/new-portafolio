@@ -43,10 +43,11 @@ $size-border: 5px;
                             cursor: pointer;
                             transition: all .4s;
                             i{ margin-left: 8px}
-                        }
-                        button:hover{
-                            background: var(--yellow-400);
-                            color: black;
+
+                            &:hover{
+                                background: var(--yellow-400);
+                                color: black;
+                            }
                         }
                     }
                 }
@@ -74,10 +75,10 @@ $size-border: 5px;
                     transition: all .4s;
                     object-fit: cover;
                     width: 100%;
-                }
-                img:hover{
-                    border: 3px solid var(--yellow-600);
-                    transform: rotate(0);
+                    &:hover{
+                        border: 3px solid var(--yellow-600);
+                        transform: rotate(0);
+                    }
                 }
             }
             &::after{
