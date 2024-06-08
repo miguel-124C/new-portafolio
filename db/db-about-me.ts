@@ -7,15 +7,15 @@ export const EXPERIENCIA: AboutMe[] = [
   {
     date: '2023(Julio) - 2023(Octubre)',
     title: 'Sistema de Inventario',
-    subtitle: 'Participé en la creacion del sistema',
+    subtitle: 'Participé en la creación del sistema',
   },{
     date: '2023 - Presente',
     title: 'Sistema de Almacen',
-    subtitle: 'Implementando sistema de organizacion de Racks',
+    subtitle: 'Implementando sistema de organización de Racks',
   },{
     date: 'Presente',
     title: 'Diseño de Portafolio Empresarial',
-    subtitle: 'Participacion en La parte de diseño web',
+    subtitle: 'Participación en La parte de diseño web',
   },{
     date: 'Presente',
     title: 'Diseño de Reportes',
