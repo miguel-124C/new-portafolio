@@ -21,6 +21,7 @@ $yellow : var(--yellow-400);
         gap: 1em;
         flex-wrap: wrap;
         li{
+            margin-bottom: 5px;
             a{
                 transition: .45s;
                 background: var(--yellow-700);
@@ -44,10 +45,7 @@ $yellow : var(--yellow-400);
         align-items: center;
         gap: 15px;
         margin-bottom: 30px;
-        i{
-            color: $yellow;
-        }
-        h1{ font-size: 2.5em; }
+        i{ color: $yellow; }
     }
 }
 
@@ -58,6 +56,12 @@ $yellow : var(--yellow-400);
             display: flex;
             flex-wrap: wrap;
             gap: 45px;
+        }
+    }
+    .contain-data{
+        .title{
+            gap: 5px;
+            i{ font-size: 1.8rem; }
         }
     }
 }

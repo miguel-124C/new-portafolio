@@ -16,3 +16,10 @@
 @media screen and (max-width: 770px) {
   .cards{ width: 100%; }
 }
+@media screen and (max-width: 320px) {
+  .cards{
+    span{ font-size: .9em; }
+    h2{ font-size: 1.2em; }
+    p{ font-size: 1em; }
+  }
+}

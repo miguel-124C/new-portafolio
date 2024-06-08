@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, inject } from '@angular/core';
 import { fromEvent, map } from 'rxjs';
-import { IndexDirectionService } from '../services';
+import { HeaderService } from '../services';
 
 interface EventMouse {
   target:{
@@ -23,7 +23,7 @@ export class LayoutsComponent implements AfterViewInit {
   public showHeaderIn: number = 500;
   public showHeaderFixed: boolean = false;
 
-  private indexPositionService = inject( IndexDirectionService );
+  private indexPositionService = inject( HeaderService );
 
   constructor() { }
   
@@ -49,7 +49,6 @@ export class LayoutsComponent implements AfterViewInit {
           const zonaSection = sectionTop + sectionHeight; // Rango del elemento
 
           if (scrollPosition >= sectionTop && scrollPosition < zonaSection) {
-            console.log(scrollPosition, sectionTop, zonaSection)
             this.indexPositionService.currentIndex.set( index );
           }
         });

@@ -4,7 +4,7 @@
       <nav>
         <div class="email-content">
           <a href="/" class="logo">M</a>
-          <a [href]="hrefGmail">
+          <a class="correo" [href]="hrefGmail">
             {{ gmail }}
           </a>
         </div>
@@ -12,7 +12,12 @@
         <ul #ulHeader>
           <li *ngFor="let title of getListTitlesHeader; let i = index"
             class="header-li">
-            <a [href]="title.href">
+            <a [href]="title.href" *ngIf="!canClick()">
+              {{ title.name }}
+              <i [class]="title.icon"></i>
+            </a>
+            <a (click)="openCloseHeader( open, close, ulHeader )"
+              [href]="title.href" *ngIf="canClick()">
               {{ title.name }}
               <i [class]="title.icon"></i>
             </a>
