@@ -91,9 +91,7 @@ header{
       .email-content{
         display: grid;
         gap: 10px;
-        .logo{
-          font-size: 2.5em;
-        }
+        .logo{ font-size: 2.5em; }
         .correo{ font-size: .9em; }
       }
     }
@@ -132,12 +130,8 @@ $timing: ease-out;
 }
 
 // Mostrar / ocultar iconos en header responsive
-.showIcon{
-  animation: showIcon .5s normal forwards;
-}
-.hiddenIcon{
-  animation: hiddenIcon .5s normal forwards;
-}
+.showIcon{ animation: showIcon .5s normal forwards; }
+.hiddenIcon{ animation: hiddenIcon .5s normal forwards; }
 
 @keyframes showIcon {
   0%{
@@ -149,6 +143,7 @@ $timing: ease-out;
     transform: rotate(0);
   }
 }
+
 @keyframes hiddenIcon {
   0%{
     opacity: 1;
@@ -163,12 +158,9 @@ $timing: ease-out;
 
 // Mostrar / ocultar header responsive
 
-.showHeader{
-  animation: showHeader .5s normal forwards;
-}
-.hiddenHeader{
-  animation: hiddenHeader .5s normal forwards;
-}
+.showHeader{ animation: showHeader .5s normal forwards; }
+.hiddenHeader{ animation: hiddenHeader .5s normal forwards; }
+
 @keyframes showHeader {
   0%{
     top: -100%;
@@ -179,6 +171,7 @@ $timing: ease-out;
     height: calc(100vh - var(--width-nav-bar));
   }
 }
+
 @keyframes hiddenHeader {
   0%{
     top: var(--width-nav-bar);

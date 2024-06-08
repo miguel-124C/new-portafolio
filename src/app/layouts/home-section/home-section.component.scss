@@ -16,15 +16,8 @@ $size-border: 5px;
         align-items: center;
 
         .contain-data{
-            h2{
-                font-size: 30px;
-            }
-
-            h1{
-                font-size: 2.5rem;
-                
-            }
-
+            h2{ font-size: 30px; }
+            h1{ font-size: 2.5rem; }
             p{
                 margin: 20px 0;
                 font-size: 20px;
@@ -87,20 +80,20 @@ $size-border: 5px;
                     transform: rotate(0);
                 }
             }
-        }
-        .content-img-profile::after{
-            content: "";
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            width: 220px;
-            height: 220px;
-            background: -o-linear-gradient(260deg, var(--yellow-400) 0%, #000 100%);
-            background: linear-gradient(260deg, var(--yellow-400) 0%, #000 100%);
-            border-radius: 50%;
-            filter: blur(100px);
-            margin-top: -5%;
-            margin-right: -5%;
+            &::after{
+                content: "";
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 220px;
+                height: 220px;
+                background: -o-linear-gradient(260deg, var(--yellow-400) 0%, #000 100%);
+                background: linear-gradient(260deg, var(--yellow-400) 0%, #000 100%);
+                border-radius: 50%;
+                filter: blur(100px);
+                margin-top: -5%;
+                margin-right: -5%;
+            }
         }
     }
     
@@ -182,9 +175,7 @@ $size-border: 5px;
             flex-wrap: wrap;
     
             .contain-data{
-                h2{ font-size: 30px; }
                 h1{ font-size: 2.4rem; }
-                p{ margin: 20px 0; }
                 
                 .content-list-links{
                     position: absolute;
@@ -194,9 +185,7 @@ $size-border: 5px;
                         gap: 8px;
                         li{
                             button{
-                                font-size: 1rem;
                                 margin: 0;
-                                border-radius: 30px;
                                 padding: 13px 20px;
                                 i{ margin-left: 0}
                             }
@@ -206,10 +195,8 @@ $size-border: 5px;
             }
     
             .content-img-profile{
-                width: 100%;
                 height: 400px;
                 padding: 0;
-                position: relative;
                 
                 .content-img{
                     height: 80%;
@@ -226,14 +213,10 @@ $size-border: 5px;
             .contain-data{
                 h2{ font-size: 25px; }
                 h1{ font-size: 2rem; }
-                p{
-                    margin: 20px 0;
-                    font-size: 1.1em;
-                }
+                p{ font-size: 1.1em; }
             }
     
             .content-img-profile{
-                width: 100%;
                 height: 350px;
                 .content-img{
                     height: 80%;
@@ -253,31 +236,16 @@ $size-border: 5px;
                 p{ font-size: 1em; }
 
                 .content-list-links{
-                    position: absolute;
                     bottom: -120px;
                     .list-links{
-                        margin: 10px 0;
-                        gap: 8px;
                         li{
-                            button{
-                                font-size: 1rem;
-                                margin: 0;
-                                border-radius: 30px;
-                                padding: 13px 20px;
-                                i{ margin-left: 0}
-                            }
+                            button{ margin: 0; }
                         }
                     }
                 }
             }
     
-            .content-img-profile{
-                height: 300px;
-                .content-img{
-                    height: 80%;
-                    width: 80%;
-                }
-            }
+            .content-img-profile{ height: 300px; }
         }
     }
 }
