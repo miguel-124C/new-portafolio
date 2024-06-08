@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { GMAIL, PHONE, UrlPersonals } from 'db/dataPersonal';
 import { Redes } from 'src/app/interfaces';
 
@@ -7,17 +7,16 @@ import { Redes } from 'src/app/interfaces';
   templateUrl: './contac-me-section.component.html',
   styleUrls: ['./contac-me-section.component.scss'],
 })
-export class ContacMeSectionComponent implements AfterViewInit {
+export class ContacMeSectionComponent implements OnInit {
 
   public urlPersonals = {};
   public redes: Redes[] = [];
 
   public constructor(){
     this.urlPersonals = UrlPersonals;
-
   }
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     this.redes = [
       {
         href: UrlPersonals.whatsApp,

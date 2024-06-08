@@ -67,6 +67,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        gap: 1rem;
 
         li{
           display: flex;
@@ -110,6 +111,9 @@
       }
       .enlaces{
         width: 100%;
+        ul{
+          padding: 50px 0;
+        }
       }
     }
   }
