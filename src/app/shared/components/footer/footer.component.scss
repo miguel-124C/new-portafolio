@@ -1,6 +1,52 @@
 footer{
   color: white;
-  height: 250px;
   background: var(--black-600);
+  padding: 25px 0;
+
+  .other-links{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .links{
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      .home{
+        font-size: 1.3em;
+        cursor: pointer;
+        transition: .45s;
+        &:hover{
+          color: var(--yellow-600);
+        }
+      }
   
+      div{
+        a{
+          color: white;
+          transition: .45s;
+          &:hover{
+            color: var(--yellow-600);
+          }
+        }
+      }
+    }
+
+    .flag{
+      height: 100%;
+      display: flex;
+      gap: 10px;
+    }
+  }
+  
+  hr{
+    background-color: var(--black-500);
+    height: 1px;
+  }
+  .marca{
+    margin-top: 25px;
+    text-align: center;
+  }
 }
