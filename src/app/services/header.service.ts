@@ -12,7 +12,7 @@ interface ParamAnimation {
 @Injectable({providedIn: 'root'})
 export class HeaderService implements OnDestroy {
   
-  private historyIndex = [-1];
+  private historyIndex: number[] = [];
   public canClick = signal(false);
 
   public onResize!: Subscription;
@@ -30,11 +30,14 @@ export class HeaderService implements OnDestroy {
     this.onResize.unsubscribe();
   }
 
-  public currentIndex = signal<number>(0);
+  public currentIndex = signal<number>(-1);
   public formerIndex  = computed<number>(()=>{
     const former = this.historyIndex[this.historyIndex.length - 1];
     this.historyIndex.push( this.currentIndex() );
+    if (this.historyIndex.length > 2) this.historyIndex.shift();
 
+    console.log(this.historyIndex);
+    
     return former;
   });
 

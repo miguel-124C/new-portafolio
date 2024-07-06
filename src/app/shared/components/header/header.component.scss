@@ -35,19 +35,27 @@ header{
         a{
           color: white;
           text-decoration: none;
+          padding: 0 10px;
+          font-size: 1.20em;
         }
         span{
           position: absolute;
           content: "";
           bottom: 0;
           width: 0;
-          height: 2px;
-          background: var(--yellow-500);
+          height: 100%;
+          border-radius: 5px;
+          z-index: -10;
+          border: 1px solid var(--yellow-400);
         }
       }
     }
     .opencloseheader{ display: none; }
   }
+}
+
+.border-icon{
+  box-shadow: 0 0 10px 2px var(--yellow-600);
 }
 
 @media screen and (max-width: 770px) {
@@ -118,7 +126,7 @@ $timing: ease-out;
 }
 .hiddenLeft{
   left: 0;
-  animation: select2 $durationAnimation $timing normal backwards;
+  animation: select2 $durationAnimation $timing normal forwards;
 }
 
 @keyframes select {

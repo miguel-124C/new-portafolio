@@ -20,8 +20,9 @@ interface EventMouse {
 
 export class LayoutsComponent implements AfterViewInit {
 
-  public showHeaderIn: number = 500;
+  private showHeaderIn: number = 500;
   public showHeaderFixed: boolean = false;
+  public isInHome = false;
 
   private indexPositionService = inject( HeaderService );
 
@@ -42,6 +43,7 @@ export class LayoutsComponent implements AfterViewInit {
 
         const sections: NodeListOf<HTMLElement> = document.querySelectorAll('.page');
 
+        let indexHome = 0;
         sections.forEach( (section, index)=>{
           const sectionTop = section.offsetTop; // Distancia entre el viewPort y el elemento
           const sectionHeight = section.getBoundingClientRect().height; // Tamaño del elemento
@@ -50,8 +52,17 @@ export class LayoutsComponent implements AfterViewInit {
 
           if (scrollPosition >= sectionTop && scrollPosition < zonaSection) {
             this.indexPositionService.currentIndex.set( index );
+          }else{
+            indexHome++;
           }
         });
+
+        if (indexHome == sections.length) {
+          this.isInHome = true;
+          this.indexPositionService.currentIndex.set( -1 );
+        }else{
+          this.isInHome = false;
+        }
       }
     });
   }

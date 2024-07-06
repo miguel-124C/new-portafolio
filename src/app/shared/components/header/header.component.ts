@@ -1,4 +1,4 @@
-import { Component, inject, computed, AfterViewInit, } from '@angular/core';
+import { Component, inject, computed, AfterViewInit, Input, } from '@angular/core';
 import { GMAIL, UrlPersonals } from 'db/dataPersonal';
 import { TitleHeader } from 'src/app/interfaces';
 import { HeaderService } from 'src/app/services';
@@ -9,11 +9,13 @@ import { HeaderService } from 'src/app/services';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements AfterViewInit{
+
   private headerService = inject( HeaderService );
   
   public list?: NodeListOf<HTMLElement>;
   public hrefGmail = '';
   public gmail = GMAIL;
+  @Input({required: true}) isInHome = false;
   
   public current = computed(()=> this.headerService.currentIndex());
   public former  = computed(()=> this.headerService.formerIndex());

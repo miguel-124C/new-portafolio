@@ -3,8 +3,8 @@
     <div class="container">
       <nav>
         <div class="email-content">
-          <a href="/" class="logo">
-            <img class="img-icon" src="favicon.ico" alt="">
+          <a href="#home" class="logo">
+            <img class="img-icon" src="favicon.ico" alt="" [ngClass]="{ 'border-icon': isInHome }">
           </a>
           <a class="correo" [href]="hrefGmail">
             {{ gmail }}
@@ -16,12 +16,10 @@
             class="header-li">
             <a [href]="title.href" *ngIf="!canClick()">
               {{ title.name }}
-              <i [class]="title.icon"></i>
             </a>
             <a (click)="openCloseHeader( open, close, ulHeader )"
               [href]="title.href" *ngIf="canClick()">
               {{ title.name }}
-              <i [class]="title.icon"></i>
             </a>
             <span [ngClass]=" {
                 'showRight' : i == current() && direction() == 'DERECHA',

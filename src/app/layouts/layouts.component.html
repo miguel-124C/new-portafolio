@@ -1,6 +1,6 @@
 <div class="body">
   <div class="header-fixed fadein" *ngIf="showHeaderFixed">
-    <app-header/>
+    <app-header [isInHome]="isInHome"/>
   </div>
 
   <app-home id="home"></app-home>
