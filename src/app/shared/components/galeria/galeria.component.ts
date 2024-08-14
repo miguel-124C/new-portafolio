@@ -14,17 +14,4 @@ export class GaleriaComponent implements OnInit {
   @Input()
   public proyect!: Wokrs;
 
-  sizeProject: number = 600;
-
-  public animation: Keyframe[] = [
-    { transform: 'translateX(-500px)'}
-  ];
-
-  public options: KeyframeAnimationOptions = {
-    duration: 1000,
-    direction: 'normal',
-    fill: 'forwards',
-  }
-
-
 }

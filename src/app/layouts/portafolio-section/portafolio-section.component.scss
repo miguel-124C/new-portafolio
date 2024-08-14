@@ -24,6 +24,7 @@
                 display: flex;
                 justify-content: center;
                 gap: 20px;
+                flex-wrap: wrap;
 
                 li{
                     background: var(--yellow-600);
@@ -31,8 +32,34 @@
                     padding: 5px;
                     border-radius: 10px;
                     cursor: pointer;
+                    transition: all .5s;
+
+                    // &:hover{
+                    // }
                 }
             }
+            
+            ul .filter-select {
+                color: #ffffff;
+                background: var(--yellow-700);
+                font-weight: bold;
+            }
         }
+
+        .contain-galery{
+            animation: appearGallery .8s forwards ease-in-out;
+        }
+
+    }
+}
+
+@keyframes appearGallery {
+    0%{
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
     }
 }

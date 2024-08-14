@@ -12,6 +12,8 @@ export enum IconTecnology {
   "JAVA" = `devicon-java-plain-wordmark colored ${sizeIcon}`,
 }
 
+export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Cursos' | 'Otros';
+
 export interface Tecnologys {
   name: string,
   classIcon: IconTecnology,
@@ -24,4 +26,5 @@ export interface Wokrs {
   hrefCode      : string;
   hrefDemo      : string;
   useTecnology  : Tecnologys[];
+  category      : CategoryWork;
 }

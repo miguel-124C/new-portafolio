@@ -11,13 +11,15 @@
         <div class="containGallery">
             <div class="filters">
                 <ul>
-                    <li>Todos</li>
-                    <li>Juegos</li>
-                    <li>Apps</li>
+                    <li *ngFor="let filter of filters"
+                        (click)="filterByCategory(filter.category)"
+                        [ngClass]="{ 'filter-select': filter.category == currentCategory }">
+                        {{ filter.name }}
+                    </li>
                 </ul>
             </div>
 
-            <div *ngFor="let proyect of listProyects">
+            <div *ngFor="let proyect of listProyects" class="contain-galery">
                 <c-galeria [proyect]="proyect"></c-galeria>
             </div>
         </div>
