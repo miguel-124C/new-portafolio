@@ -35,8 +35,6 @@ export class HeaderService implements OnDestroy {
     const former = this.historyIndex[this.historyIndex.length - 1];
     this.historyIndex.push( this.currentIndex() );
     if (this.historyIndex.length > 2) this.historyIndex.shift();
-
-    console.log(this.historyIndex);
     
     return former;
   });

@@ -1,0 +1,18 @@
+<div *ngIf=" list.length > limit " class="contain-pagination">
+    <div>
+        <button class="btn-pag" (click)="changeOffset( -1 )">
+            <<
+        </button>
+    </div>
+    <div *ngFor="let pagination of numbers">
+        <button class="btn-pag btn-numbers" [ngClass]="{'select-pag': offset() == pagination }"
+            (click)="setOffset( pagination )">
+            {{ pagination + 1 }}
+        </button>
+    </div>
+    <div>
+        <button class="btn-pag" (click)="changeOffset( +1 )">
+            >>
+        </button>
+    </div>
+</div>

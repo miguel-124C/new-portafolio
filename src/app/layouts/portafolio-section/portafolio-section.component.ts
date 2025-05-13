@@ -37,4 +37,8 @@ export class PortafolioComponent {
     this.listProyects = this.listProyects.filter( proyect => proyect.category == category );
   }
 
+  public onChangeOffset( offset: number ){
+    // console.log(offset)
+  }
+
 }

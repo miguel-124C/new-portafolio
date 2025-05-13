@@ -1,6 +1,6 @@
 import { IconTecnology, Tecnologys } from "src/app/interfaces/works.interface";
 
-const { HTML, CSS, JS, TS, ANGULAR, BOOTSTRAP, SASS, JAVA, NEST } = IconTecnology;
+const { HTML, CSS, JS, TS, ANGULAR, BOOTSTRAP, SASS, JAVA, NEST, NODE, EXPRESS } = IconTecnology;
 
 export const _html: Tecnologys = {
   name: 'Html',
@@ -43,4 +43,12 @@ export const _java: Tecnologys = {
 export const _nest: Tecnologys = {
   name: 'Nest',
   classIcon: NEST,
+};
+export const _node: Tecnologys = {
+  name: 'Node',
+  classIcon: NODE,
+};
+export const _express: Tecnologys = {
+  name: 'Express',
+  classIcon: EXPRESS,
 };

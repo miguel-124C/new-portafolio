@@ -10,6 +10,8 @@ export enum IconTecnology {
   "BOOTSTRAP" = `devicon-bootstrap-plain colored ${sizeIcon}`,
   "NEST" = `devicon-nestjs-original colored ${sizeIcon}`,
   "JAVA" = `devicon-java-plain-wordmark colored ${sizeIcon}`,
+  "NODE" = `devicon-nodejs-plain-wordmark colored ${sizeIcon}`,
+  "EXPRESS" = `devicon-express-original-wordmark ${sizeIcon}`,
 }
 
 export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Cursos' | 'Otros';

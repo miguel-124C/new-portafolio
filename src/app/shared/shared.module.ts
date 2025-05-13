@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SlierRangeComponent } from './components/slider-range/slier-range.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { SlierRangeComponent } from './components/slider-range/slier-range.compo
         GaleriaComponent,
         HeaderComponent,
         FooterComponent,
+        PaginationComponent,
     ],
     imports: [
         CommonModule
@@ -29,6 +31,7 @@ import { SlierRangeComponent } from './components/slider-range/slier-range.compo
         GaleriaComponent,
         HeaderComponent,
         FooterComponent,
+        PaginationComponent,
     ],
     providers: [],
 })

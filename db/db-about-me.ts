@@ -9,17 +9,21 @@ export const EXPERIENCIA: AboutMe[] = [
     title: 'Sistema de Inventario',
     subtitle: 'Participé en la creación del sistema',
   },{
-    date: '2023 - Presente',
+    date: '2023 - 2024',
     title: 'Sistema de Almacen',
     subtitle: 'Implementando sistema de organización de Racks',
   },{
-    date: 'Presente',
+    date: '2024',
     title: 'Diseño de Portafolio Empresarial',
     subtitle: 'Participación en La parte de diseño web',
   },{
-    date: 'Presente',
+    date: '2024',
     title: 'Diseño de Reportes',
     subtitle: 'Utilizando JasperReports, reportes para los sistemas hechos',
+  },{
+    date: '2024 - Presente',
+    title: 'Sistema de reservas y gestión',
+    subtitle: 'Sitio web de reserva de hospedajes con método de pago QR con Banco nacional. Como también sitio de administración',
   }
 ];
 
@@ -38,17 +42,9 @@ export const EDUCATION: AboutMe[] = [
     title: 'Programación con JavaScript (Cisco)',
     subtitle: 'Curso avanzado con JavaScript',
   },{
-    date: '2023(Junio) - Presente',
-    title: 'Cursos de Udemy',
-    subtitle: 'Cursos de Angular, Java, ReactiveX Js...',
-  },{
-    date: 'Presente',
+    date: '2024',
     title: 'BootCamp BackEnd con Java',
     subtitle: 'BootCamp con Alura Latam',
-  },{
-    date: 'Presente',
-    title: 'Cursos en Devtalles',
-    subtitle: 'Principios Solid, Visual Studio Code',
   }
 ];
 
@@ -68,5 +64,8 @@ export const CERTIFICATES: AboutMe[] = [
   },{
     title: 'VS Code',
     href: `${pathCertificate}/devtalles/vscode.${extension}`,
+  },{
+    title: 'Node.Js: De cero a experto',
+    href: `${pathCertificate}/devtalles/node.${extension}`,
   },
 ];
