@@ -17,7 +17,7 @@ export class SkillsComponent {
       srcImage: `${this.pathImage}/html.png`,
     },{
       nameSkill:'CSS',
-      percent: 87,
+      percent: 90,
       srcImage: `${this.pathImage}/css.png`,
     },{
       nameSkill:'JAVASCRIPT',
@@ -25,27 +25,27 @@ export class SkillsComponent {
       srcImage: `${this.pathImage}/javascript.png`,
     },{
       nameSkill:'ANGULAR',
-      percent: 80,
-      srcImage: `${this.pathImage}/angular.png`,
+      percent: 88,
+      srcImage: `${this.pathImage}/angular.gif`,
     },{
       nameSkill:'GitHub',
-      percent: 68,
+      percent: 70,
       srcImage: `${this.pathImage}/github.png`,
     },{
       nameSkill:'POSTGRES',
-      percent: 58,
+      percent: 75,
       srcImage: `${this.pathImage}/postgresql.png`,
     },{
       nameSkill: 'JAVA',
-      percent: 55,
+      percent: 60,
       srcImage: `${this.pathImage}/java.png`,
     },{
       nameSkill: 'NODE.JS',
-      percent: 62,
+      percent: 65,
       srcImage: `${this.pathImage}/nodejs.png`,
     },{
       nameSkill: 'C#',
-      percent: 51,
+      percent: 60,
       srcImage: `${this.pathImage}/c-sharp.png`,
     },
 
