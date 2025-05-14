@@ -1,6 +1,6 @@
 export const NAMEGITHUB = 'miguel-124C';
 export const PHONE      = 59178071967;
-export const GMAIL      = 'mikicuellar20@gmail.com';
+export const GMAIL      = 'miguelcs4012@gmail.com';
 
 export const UrlPersonals = {
   gmail    : `mailto:${GMAIL}`,
