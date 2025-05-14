@@ -14,7 +14,7 @@ export enum IconTecnology {
   "EXPRESS" = `devicon-express-original-wordmark ${sizeIcon}`,
 }
 
-export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Cursos' | 'Otros';
+export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Otros' | 'Consola';
 
 export interface Tecnologys {
   name: string,
