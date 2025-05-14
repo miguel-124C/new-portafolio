@@ -20,7 +20,7 @@ export class PortafolioComponent {
     { name: "Api's", category: 'Apis' },
     { name: "Crud", category: 'Crud' },
     { name: "Estilos", category: 'Style' },
-    { name: "Cursos", category: 'Cursos' },
+    { name: "Consola", category: 'Consola' },
     { name: "Otros", category: 'Otros' },
   ];
   public listProyects: Wokrs[] = Proyects;
