@@ -36,17 +36,21 @@ export class SkillsComponent {
       percent: 75,
       srcImage: `${this.pathImage}/postgresql.png`,
     },{
-      nameSkill: 'JAVA',
-      percent: 60,
-      srcImage: `${this.pathImage}/java.png`,
-    },{
       nameSkill: 'NODE.JS',
-      percent: 65,
+      percent: 70,
       srcImage: `${this.pathImage}/nodejs.png`,
+    },{
+      nameSkill: 'JAVA',
+      percent: 65,
+      srcImage: `${this.pathImage}/java.png`,
     },{
       nameSkill: 'C#',
       percent: 60,
       srcImage: `${this.pathImage}/c-sharp.png`,
+    },{
+      nameSkill: 'Nest',
+      percent: 55,
+      srcImage: `${this.pathImage}/nest.png`,
     },
 
   ];

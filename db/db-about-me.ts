@@ -67,5 +67,8 @@ export const CERTIFICATES: AboutMe[] = [
   },{
     title: 'Node.Js: De cero a experto',
     href: `${pathCertificate}/devtalles/node.${extension}`,
+  },{
+    title: 'Nest: Desarrollo backend escalable con Node',
+    href: `${pathCertificate}/devtalles/nest.${extension}`,
   },
 ];
