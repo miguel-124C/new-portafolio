@@ -70,5 +70,8 @@ export const CERTIFICATES: AboutMe[] = [
   },{
     title: 'Nest: Desarrollo backend escalable con Node',
     href: `${pathCertificate}/devtalles/nest.${extension}`,
+  },{
+    title: 'Docker',
+    href: `${pathCertificate}/devtalles/docker.${extension}`,
   },
 ];
