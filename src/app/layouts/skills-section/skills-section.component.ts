@@ -42,7 +42,7 @@ export class SkillsComponent {
     },{
       nameSkill: '.Net Core',
       percent: 78,
-      srcImage: `${this.pathImage}/.netcore.png`,
+      srcImage: `${this.pathImage}/dotnetcore.png`,
     },{
       nameSkill: 'Nest',
       percent: 58,
