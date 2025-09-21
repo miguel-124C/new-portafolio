@@ -31,6 +31,13 @@ export const Proyects: Wokrs[] = [
     useTecnology: [ _html, _css, _js, ],
     category: 'Style'
   },{
+    srcImg:`${pathImages}/gato.png`,
+    name: '3 en raya',
+    hrefDemo:`${pathGitHubPage}/Gato-3EnRaya`,
+    hrefCode: `${pathGithubCode}/Gato-3EnRaya`,
+    useTecnology: [ _js, _css, _html ],
+    category: 'Game'
+  },{
     srcImg:`${pathImages}/ritmo.png`,
     name:'Ritmo',
     hrefDemo:`${pathGitHubPage}/Memoriza-la-cancion`,
@@ -117,12 +124,5 @@ export const Proyects: Wokrs[] = [
     hrefCode: `${pathGithubCode}/09-mapsApp`,
     useTecnology: [ _angular, _ts, _bootstrap ],
     category: 'Otros'
-  },{
-    srcImg:`${pathImages}/gato.png`,
-    name: 'Gato 3 en raya',
-    hrefDemo:`${pathGitHubPage}/Gato-3EnRaya`,
-    hrefCode: `${pathGithubCode}/Gato-3EnRaya`,
-    useTecnology: [ _js, _css, _html ],
-    category: 'Game'
   },
 ];

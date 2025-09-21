@@ -16,11 +16,11 @@ $size-border: 5px;
         align-items: center;
 
         .contain-data{
-            h2{ font-size: 30px; }
-            h1{ font-size: 2.5rem; }
+            h2{ font-size: clamp(1.25rem, 2vw, 1.8rem) }
+            h1{ font-size: clamp(1.8rem, 2vw, 2.5rem) }
             p{
-                margin: 20px 0;
-                font-size: 20px;
+                margin: 1rem 0;
+                font-size: clamp(1.1rem, 2vw, 1.25rem);
                 max-width: 500px;
             }
 
@@ -35,7 +35,7 @@ $size-border: 5px;
                         button{
                             font-size: 1rem;
                             margin: 10px 0;
-                            border-radius: 30px;
+                            border-radius: var(--border-radius-md);
                             padding: 15px 30px;
                             background: transparent;
                             color: var(--yellow-400);
@@ -70,7 +70,7 @@ $size-border: 5px;
                 z-index: 100;
                 img{
                     transform: rotate(4.29deg);
-                    border-radius: 35px;
+                    border-radius: clamp(var(--border-radius-sm), 2vw, var(--border-radius-lg));
                     border: 2px solid var(--yellow-400);
                     transition: all .4s;
                     object-fit: cover;
@@ -176,7 +176,6 @@ $size-border: 5px;
             flex-wrap: wrap;
     
             .contain-data{
-                h1{ font-size: 2.4rem; }
                 
                 .content-list-links{
                     position: absolute;
@@ -211,12 +210,6 @@ $size-border: 5px;
 @media screen and (max-width: 460px) {
     .contain{
         .info-personal{
-            .contain-data{
-                h2{ font-size: 25px; }
-                h1{ font-size: 2rem; }
-                p{ font-size: 1.1em; }
-            }
-    
             .content-img-profile{
                 height: 350px;
                 .content-img{
@@ -232,10 +225,6 @@ $size-border: 5px;
     .contain{
         .info-personal{
             .contain-data{
-                h2{ font-size: 20px; }
-                h1{ font-size: 1.8rem; }
-                p{ font-size: 1em; }
-
                 .content-list-links{
                     bottom: -120px;
                     .list-links{

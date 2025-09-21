@@ -12,7 +12,7 @@
     .formulario{
       border: 2px solid var(--yellow-600);
       padding: 20px;
-      border-radius: 20px;
+      border-radius: clamp(var(--border-radius-sm), 2vw, var(--border-radius-lg));
 
       .title{
         justify-items: center;
@@ -50,7 +50,7 @@
           margin-top: 25px;
           transition: all .45s;
           background: var(--black-600);
-          border-radius: 10px;
+          border-radius: clamp(var(--border-radius-sm), 2vw, var(--border-radius-md));
           border: none;
         }
         .btn:hover{

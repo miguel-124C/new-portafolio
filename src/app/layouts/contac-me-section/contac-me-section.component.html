@@ -22,7 +22,7 @@
             <div class="content-icon">
               <i [class]="item.icon"></i>
             </div>
-            <a href="{{ item.href }}" target="_blank">
+            <a [attr.href]="item.href || null" target="_blank">
               {{ item.title }}
             </a>
           </li>

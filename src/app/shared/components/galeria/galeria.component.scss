@@ -12,7 +12,7 @@
         position: relative;
         overflow: hidden;
         border: 5px double var(--yellow-600);
-        border-radius: 20px;
+        border-radius: clamp(var(--border-radius-sm), 2vw, var(--border-radius-lg));
 
         img{
             width: 100%;
@@ -44,9 +44,8 @@
                         border-radius: 3px;
                         background: #000000;
                         padding: 2px;
-                        font-size: 2em;
+                        font-size: clamp(1.3rem , 1.5vw, 2rem);
                     }
-                    
                 }
             }
             .buttons{
@@ -62,7 +61,7 @@
                         cursor: pointer;
                         transition: all .45s;
                         color: #fff;
-                        font-size: 1.3em;
+                        font-size: clamp(1.2rem , 2vw, 1.3rem);
                     }
                 }
             }
@@ -93,24 +92,6 @@
         .contain-card{
             width: 200px;
             height: 200px;
-            .content-info {
-                .tecnologys {
-                    ul {
-                        li {
-                            font-size: 1.2em;
-                        }
-        
-                    }
-                }
-        
-                .buttons {
-                    a {
-                        button {
-                            font-size: 1em;
-                        }
-                    }
-                }
-            }
         }
     }
 }

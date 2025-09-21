@@ -37,7 +37,7 @@
                     overflow: hidden;
                     position: relative;
                     border: 3px solid var(--black-500);
-                    border-radius: 10px;
+                    border-radius: clamp(var(--border-radius-sm), 2vw, var(--border-radius-md));
                     filter: grayscale(1);
                     transition: all .4s;
 
@@ -57,7 +57,7 @@
                         bottom: 0;
                         width: 100%;
                         text-align: center;
-                        font-size: 1.3em;
+                        font-size: 1em;
                     }
                 }
                 

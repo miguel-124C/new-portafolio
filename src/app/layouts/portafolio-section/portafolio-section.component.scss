@@ -23,14 +23,14 @@
             ul{
                 display: flex;
                 justify-content: center;
-                gap: 20px;
+                gap: clamp(.5rem, 2vw, 1rem);
                 flex-wrap: wrap;
 
                 li{
                     background: var(--yellow-600);
                     color: black;
                     padding: 5px;
-                    border-radius: 10px;
+                    border-radius: var(--border-radius-sm);
                     cursor: pointer;
                     transition: all .5s;
 

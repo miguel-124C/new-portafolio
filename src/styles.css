@@ -20,6 +20,10 @@
 
     --tj-ff-russo: "Russo One", sans-serif;
     --ff-logo: "Caveat", cursive;
+
+    --border-radius-lg: 1.56rem;
+    --border-radius-md: 1rem;
+    --border-radius-sm: 0.625rem;
 }
 
 *{

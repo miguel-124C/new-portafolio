@@ -49,7 +49,7 @@ export class SkillsComponent {
       srcImage: `${this.pathImage}/nest.png`,
     },{
       nameSkill: 'Docker',
-      percent: 45,
+      percent: 50,
       srcImage: `${this.pathImage}/docker.png`,
     },
   ];
