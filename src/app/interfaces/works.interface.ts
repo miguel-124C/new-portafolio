@@ -12,6 +12,8 @@ export enum IconTecnology {
   "JAVA" = `devicon-java-plain-wordmark colored ${sizeIcon}`,
   "NODE" = `devicon-nodejs-plain-wordmark colored ${sizeIcon}`,
   "EXPRESS" = `devicon-express-original-wordmark ${sizeIcon}`,
+  "PYTHON" = `devicon-python-plain-wordmark colored ${sizeIcon}`,
+  "TAILWIND" = `devicon-tailwindcss-original colored ${sizeIcon}`
 }
 
 export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Otros' | 'Consola';

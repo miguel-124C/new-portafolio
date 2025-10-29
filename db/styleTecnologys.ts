@@ -1,6 +1,6 @@
 import { IconTecnology, Tecnologys } from "src/app/interfaces/works.interface";
 
-const { HTML, CSS, JS, TS, ANGULAR, BOOTSTRAP, SASS, JAVA, NEST, NODE, EXPRESS } = IconTecnology;
+const { HTML, CSS, JS, TS, ANGULAR, BOOTSTRAP, SASS, JAVA, NEST, NODE, EXPRESS, PYTHON, TAILWIND } = IconTecnology;
 
 export const _html: Tecnologys = {
   name: 'Html',
@@ -51,4 +51,12 @@ export const _node: Tecnologys = {
 export const _express: Tecnologys = {
   name: 'Express',
   classIcon: EXPRESS,
+};
+export const _python: Tecnologys = {
+  name: 'Python',
+  classIcon: PYTHON,
+};
+export const _tailwind: Tecnologys = {
+  name: 'Tailwind',
+  classIcon: TAILWIND,
 };

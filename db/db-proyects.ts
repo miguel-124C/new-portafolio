@@ -1,6 +1,6 @@
 import { Wokrs } from "src/app/interfaces/works.interface";
 import { UrlPersonals, NAMEGITHUB } from "./dataPersonal";
-import { _angular, _bootstrap, _css, _express, _html, _java, _js, _nest, _node, _sass, _ts } from "./styleTecnologys";
+import { _angular, _bootstrap, _css, _express, _html, _java, _js, _nest, _node, _python, _sass, _tailwind, _ts } from "./styleTecnologys";
 
 const pathImages = 'assets/img/proyects';
 const pathGitHubPage = `https://${NAMEGITHUB}.github.io`;
@@ -8,6 +8,13 @@ const pathGithubCode = UrlPersonals.gitHub;
 
 export const Proyects: Wokrs[] = [
   {
+    srcImg:`${pathImages}/kevin-bacon-game.png`,
+    name:'Kevin Bacon Game',
+    hrefDemo:`https://front-six-degrees-separation.onrender.com`,
+    hrefCode: `${pathGithubCode}/front-six-degrees-separation`,
+    useTecnology: [ _angular, _tailwind, _python ],
+    category: 'Game',
+  },{
     srcImg:`${pathImages}/whatsapp-cloud.png`,
     name:'WhatsApp',
     hrefDemo:`https://youtube.com/shorts/CuBcWPlwQlw?feature=share`,

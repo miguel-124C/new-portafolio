@@ -40,15 +40,19 @@ export class SkillsComponent {
       percent: 67,
       srcImage: `${this.pathImage}/java.png`,
     },{
-      nameSkill: '.Net Core',
+      nameSkill: 'PYTHON',
+      percent: 45,
+      srcImage: `${this.pathImage}/python.png`,
+    },{
+      nameSkill: '.NET CORE',
       percent: 78,
       srcImage: `${this.pathImage}/dotnetcore.png`,
     },{
-      nameSkill: 'Nest',
+      nameSkill: 'NEST',
       percent: 58,
       srcImage: `${this.pathImage}/nest.png`,
     },{
-      nameSkill: 'Docker',
+      nameSkill: 'DOCKER',
       percent: 50,
       srcImage: `${this.pathImage}/docker.png`,
     },
