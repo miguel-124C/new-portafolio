@@ -10,7 +10,7 @@ export const Proyects: Wokrs[] = [
   {
     srcImg:`${pathImages}/kevin-bacon-game.png`,
     name:'Kevin Bacon Game',
-    hrefDemo:`https://front-six-degrees-separation.onrender.com`,
+    hrefDemo:`https://youtu.be/ZmjoaaNWn6Y?si=iCyVOgyTnjidnLCb`,
     hrefCode: `${pathGithubCode}/front-six-degrees-separation`,
     useTecnology: [ _angular, _tailwind, _python ],
     category: 'Game',
