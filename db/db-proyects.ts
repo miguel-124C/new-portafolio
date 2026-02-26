@@ -131,5 +131,21 @@ export const Proyects: Wokrs[] = [
     hrefCode: `${pathGithubCode}/09-mapsApp`,
     useTecnology: [ _angular, _ts, _bootstrap ],
     category: 'Otros'
-  },
+  },{
+    srcImg:``,
+    name:'StoreFree',
+    hrefDemo:'#',
+    hrefCode: `#`,
+    useTecnology: [ _angular, _ts, _nest ],
+    category: 'Otros',
+    inProgress: true
+  },{
+    srcImg:``,
+    name:'Tetris',
+    hrefDemo:'#',
+    hrefCode: `#`,
+    useTecnology: [ _java ],
+    category: 'Game',
+    inProgress: true
+  }
 ];

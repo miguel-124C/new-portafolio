@@ -23,8 +23,11 @@ export class PortafolioComponent {
     { name: "Consola", category: 'Consola' },
     { name: "Otros", category: 'Otros' },
   ];
-  public listProyects: Wokrs[] = Proyects;
+  public listProyects: Wokrs[] = Proyects.filter( p => !p.inProgress );
+  public listProyectsInProgress: Wokrs[] = Proyects.filter( p => p.inProgress );
   public currentCategory: CategoryWork = 'All';
+
+  public isProyectInProgress: boolean = false;
 
   public filterByCategory( category: CategoryWork ): void{
     this.currentCategory = category;
@@ -39,6 +42,10 @@ export class PortafolioComponent {
 
   public onChangeOffset( offset: number ){
     // console.log(offset)
+  }
+
+  public toggleProyects() {
+    this.isProyectInProgress = !this.isProyectInProgress;
   }
 
 }

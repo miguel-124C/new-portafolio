@@ -8,8 +8,10 @@
             </p>
         </div>
     
-        <div class="containGallery">
-            <!-- <div>Proyectos en proceso</div> -->
+        <div class="containGallery containProyects" *ngIf="!isProyectInProgress ; else inProgress">
+            <div class="btnToggleProyects" *ngIf="listProyectsInProgress.length > 0" (click)="toggleProyects()">
+                Ver proyectos en proceso
+            </div>
             <div class="filters">
                 <ul>
                     <li *ngFor="let filter of filters"
@@ -28,6 +30,24 @@
                 (onChangeOffset)="onChangeOffset($event)"></app-pagination>
             </div> -->
         </div>
+
+        <ng-template #inProgress>
+            <div class="inProgressTitle">
+                <h2>Proyectos en proceso</h2>
+                <div class="btnToggleProyects" (click)="toggleProyects()">
+                    Ver proyectos completos
+                </div>
+                <br>
+                <span style="color: red;">Esta sección está en proceso!!</span>
+            </div>
+            <div class="containGallery">
+
+                <div *ngFor="let proyect of listProyectsInProgress" class="contain-galery">
+                    <c-galeria [proyect]="proyect"></c-galeria>
+                </div>
+            </div>
+        </ng-template>
+        
     
     </div>    
 </div>

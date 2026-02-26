@@ -31,4 +31,5 @@ export interface Wokrs {
   hrefDemo      : string;
   useTecnology  : Tecnologys[];
   category      : CategoryWork;
+  inProgress?   : boolean;
 }

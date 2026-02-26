@@ -17,7 +17,18 @@
         gap: 20px;
         flex-wrap: wrap;
         padding: 50px 0;
+    }
 
+    .btnToggleProyects {
+        display: inline-block;
+        cursor: pointer;
+        color: var(--yellow-600);
+        padding: .5rem 1rem;
+        border: 1px solid var(--yellow-600);
+        border-radius: var(--border-radius-sm);
+    }
+
+    .containProyects{
         .filters{
             width: 100%;
             ul{
@@ -44,12 +55,18 @@
                 background: var(--yellow-700);
                 font-weight: bold;
             }
-        }
+        }    
+    }
 
-        .contain-galery{
-            animation: appearGallery .8s forwards ease-in-out;
-        }
+    .contain-galery{
+        animation: appearGallery .8s forwards ease-in-out;
+    }
 
+    .inProgressTitle {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
