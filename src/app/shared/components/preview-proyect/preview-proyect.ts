@@ -9,13 +9,20 @@ import { Wokrs } from 'src/app/interfaces';
 })
 export class PreviewProyectComponent {
 
+  private _proyect!: Wokrs;
+  public safeHref!: SafeResourceUrl;
+
   @Input()
-  public proyect!: Wokrs;
+  set proyect(value: Wokrs) {
+    this._proyect = value;
+    // sanitize once when the input changes, avoids creating a new object on every CD cycle
+    this.safeHref = this.sanitizer.bypassSecurityTrustResourceUrl(value.hrefDemo);
+  }
+  get proyect(): Wokrs {
+    return this._proyect;
+  }
 
   constructor(private sanitizer: DomSanitizer) {}
 
-  getSafeHref(hrefDemo: string): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(hrefDemo);
-  }
-
+  // no getter required anymore
 }
