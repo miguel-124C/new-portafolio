@@ -9,6 +9,7 @@ import { ServicesComponent } from './services-section/services-section.component
 import { ContacMeSectionComponent } from './contac-me-section/contac-me-section.component';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     SharedModule,
     PrimengModule,
-    CommonModule,
+    CommonModule
   ],
   exports: [
     LayoutsComponent,

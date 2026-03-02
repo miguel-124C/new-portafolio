@@ -1,0 +1,40 @@
+
+#container{
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #fff;
+
+  .info {
+    max-width: 400px;
+    h2{
+        color: #fff;
+        font-size: 2.5em;
+    }
+    .tecnologys{
+      margin-top: 1.2rem;
+      .list-tecnologys{
+          margin-top: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          li{
+              border-radius: 3px;
+              padding: 2px;
+              font-size: clamp(2rem , 1.5vw, 2rem);
+          }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 800px ) {
+    #container{
+        .contain-card{
+          width: 100%;
+            iframe {
+              width: 100%;
+            }
+        }
+    }
+}

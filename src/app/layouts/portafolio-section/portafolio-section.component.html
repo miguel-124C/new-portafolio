@@ -2,9 +2,9 @@
     <div class="container">
 
         <div class="title">
-            <h1 class="text-linear">Proyectos</h1>
-            <p>
-                Proyectos hechos personalmente. Con la idea de poner en practica lo aprendido.
+            <h1 class="text-linear">Proyectos <b *ngIf="isProyectInProgress">en proceso</b> </h1>
+            <p *ngIf="!isProyectInProgress">
+                Hecha un vistazo a mis proyectos. Todos estos proyectos son personales, comenzados desde 0.
             </p>
         </div>
     
@@ -33,17 +33,14 @@
 
         <ng-template #inProgress>
             <div class="inProgressTitle">
-                <h2>Proyectos en proceso</h2>
                 <div class="btnToggleProyects" (click)="toggleProyects()">
                     Ver proyectos completos
                 </div>
-                <br>
-                <span style="color: red;">Esta sección está en proceso!!</span>
             </div>
             <div class="containGallery">
 
                 <div *ngFor="let proyect of listProyectsInProgress" class="contain-galery">
-                    <c-galeria [proyect]="proyect"></c-galeria>
+                    <c-preview-proyect [proyect]="proyect"></c-preview-proyect>
                 </div>
             </div>
         </ng-template>

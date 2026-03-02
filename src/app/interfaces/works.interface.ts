@@ -9,14 +9,16 @@ export enum IconTecnology {
   "SASS" = `devicon-sass-original colored ${sizeIcon}`,
   "BOOTSTRAP" = `devicon-bootstrap-plain colored ${sizeIcon}`,
   "NEST" = `devicon-nestjs-original colored ${sizeIcon}`,
-  "JAVA" = `devicon-java-plain-wordmark colored ${sizeIcon}`,
+  "JAVA" = `devicon-java-plain-wordmark ${sizeIcon}`,
   "NODE" = `devicon-nodejs-plain-wordmark colored ${sizeIcon}`,
   "EXPRESS" = `devicon-express-original-wordmark ${sizeIcon}`,
   "PYTHON" = `devicon-python-plain-wordmark colored ${sizeIcon}`,
-  "TAILWIND" = `devicon-tailwindcss-original colored ${sizeIcon}`
+  "TAILWIND" = `devicon-tailwindcss-original colored ${sizeIcon}`,
+  "POSTGRESQL" = `devicon-postgresql-plain-wordmark colored ${sizeIcon}`,
+  "DOCKER" = `devicon-docker-plain-wordmark colored ${sizeIcon}`
 }
 
-export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Otros' | 'Consola';
+export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Otros' | 'Consola' | 'inProgress';
 
 export interface Tecnologys {
   name: string,
@@ -31,5 +33,5 @@ export interface Wokrs {
   hrefDemo      : string;
   useTecnology  : Tecnologys[];
   category      : CategoryWork;
-  inProgress?   : boolean;
+  description?  : string;
 }

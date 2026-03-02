@@ -1,6 +1,6 @@
 import { Wokrs } from "src/app/interfaces/works.interface";
 import { UrlPersonals, NAMEGITHUB } from "./dataPersonal";
-import { _angular, _bootstrap, _css, _express, _html, _java, _js, _nest, _node, _python, _sass, _tailwind, _ts } from "./styleTecnologys";
+import { _angular, _bootstrap, _css, _docker, _express, _html, _java, _js, _nest, _node, _postgres, _python, _sass, _tailwind, _ts } from "./styleTecnologys";
 
 const pathImages = 'assets/img/proyects';
 const pathGitHubPage = `https://${NAMEGITHUB}.github.io`;
@@ -63,7 +63,7 @@ export const Proyects: Wokrs[] = [
     name: 'AppReloj',
     hrefDemo: 'https://app-reloj.netlify.app/reloj',
     hrefCode: `${pathGithubCode}/AppReloj-Front-End`,
-    useTecnology: [ _angular, _ts, _sass, _nest ],
+    useTecnology: [ _angular, _sass, _nest, _postgres ],
     category: 'Crud'
   },{
     srcImg:`${pathImages}/cieloscopio.webp`,
@@ -134,18 +134,18 @@ export const Proyects: Wokrs[] = [
   },{
     srcImg:``,
     name:'StoreFree',
-    hrefDemo:'#',
+    hrefDemo:'https://www.youtube.com/embed/V28Ry8aqJN8',
     hrefCode: `#`,
-    useTecnology: [ _angular, _ts, _nest ],
-    category: 'Otros',
-    inProgress: true
+    useTecnology: [ _angular, _nest, _postgres, _docker ],
+    category: 'inProgress',
+    description: `Ecommerce de publicaciones para vender y comprar. Con metodo de pago ficticio, se esta desarrollando de apoco y usando muchas herramientas`,
   },{
     srcImg:``,
     name:'Tetris',
-    hrefDemo:'#',
+    hrefDemo:'https://www.youtube.com/embed/EvHhVggUMYg',
     hrefCode: `#`,
     useTecnology: [ _java ],
-    category: 'Game',
-    inProgress: true
+    category: 'inProgress',
+    description: `Clasico juego de Tetris, hecho para Desktop. Proximamente tutorial`,
   }
 ];

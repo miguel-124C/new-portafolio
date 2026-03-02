@@ -8,6 +8,7 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SlierRangeComponent } from './components/slider-range/slier-range.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { PreviewProyectComponent } from './components/preview-proyect/preview-proyect';
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
         HeaderComponent,
         FooterComponent,
         PaginationComponent,
+        PreviewProyectComponent
     ],
     imports: [
         CommonModule
@@ -32,6 +34,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
         HeaderComponent,
         FooterComponent,
         PaginationComponent,
+        PreviewProyectComponent
     ],
     providers: [],
 })
