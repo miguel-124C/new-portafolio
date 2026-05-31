@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Proyects } from 'db/db-proyects';
-import { CategoryWork, Wokrs } from 'src/app/interfaces';
+import { CategoryWork, Works } from 'src/app/interfaces';
 import { _angular } from '../../../../db/styleTecnologys';
 
 interface Filters {
@@ -20,21 +20,28 @@ export class PortafolioComponent {
     { name: 'Todos', category: 'All' },
     { name: 'Juegos', category: 'Game' },
     { name: "Api's", category: 'Apis' },
-    { name: "Crud", category: 'Crud' },
+    // { name: "Crud", category: 'Crud' },
     { name: "Estilos", category: 'Style' },
     { name: "Consola", category: 'Consola' },
     { name: "Otros", category: 'Otros' },
   ];
-  public listProyects: Wokrs[] = Proyects.filter( p => p.category != 'inProgress' );
-  public listProyectsInProgress: Wokrs[] = Proyects.filter( p => p.category == 'inProgress' );
+  public listProyects: Works[] = [];
+  public listProyectsInProgress: Works[] = Proyects.filter( p => p.category == 'inProgress' );
   public currentCategory: CategoryWork = 'All';
 
   public isProyectInProgress: boolean = false;
+  public pagination = {
+    limit: 8,
+    offset: 0,
+    count: 0,
+  }
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {
+    this.listProyects = this.initListProyect('All');
+
     this.activatedRoute.queryParamMap.subscribe((p)=> {
       // inProgress
       const category = p.get('category') as CategoryWork;
@@ -48,29 +55,40 @@ export class PortafolioComponent {
     });
   }
 
+  private initListProyect(category: CategoryWork){
+    const offset = this.pagination.offset * this.pagination.limit;
+    const limit = offset + this.pagination.limit;
+
+    const proyects = (category == 'All')
+      ? Proyects.filter( p => p.category != 'inProgress')
+      : Proyects.filter( p => p.category != 'inProgress' && p.category == category );
+
+    this.pagination.count = proyects.length;
+
+    return proyects.filter(( _, index) => index >= offset && index < limit );
+  }
+
   public filterByCategory( category: CategoryWork ): void{
     this.currentCategory = category;
-    if (category == 'All'){
-      this.listProyects = Proyects.filter( p => p.category != 'inProgress' );
-    } else {
-      this.listProyects = Proyects;
-      this.listProyects = this.listProyects.filter( proyect => proyect.category == category && proyect.category != 'inProgress' );
-    }
+    this.pagination.offset = 0;
+
+    this.listProyects = this.initListProyect(category);
 
     this.addCategory(category);
   }
 
   public onChangeOffset( offset: number ){
-    // console.log(offset)
+    this.pagination.offset = offset;
+
+    this.listProyects = this.initListProyect(this.currentCategory);
   }
 
   public toggleProyects() {
     this.isProyectInProgress = !this.isProyectInProgress;
-    if (this.isProyectInProgress) {
+    if (this.isProyectInProgress)
       this.addCategory('inProgress');
-    } else {
+    else
       this.addCategory('All');
-    }
   }
 
   private addCategory(category: CategoryWork) {

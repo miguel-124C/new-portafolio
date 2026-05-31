@@ -14,9 +14,16 @@
         </div>
     </div>
     <div class="contain-card">
-        <iframe width="640" height="360" [src]="safeHref" title="YouTube video player" frameborder="0"
+        <iframe *ngIf="safeHref != ''; else noIframe" width="640" height="360" [src]="safeHref"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
+        
+        <ng-template #noIframe width="640" height="360">
+            <div>
+                Sin preview
+            </div>
+        </ng-template>
     </div>
 </div>

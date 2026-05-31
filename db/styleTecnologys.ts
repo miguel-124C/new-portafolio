@@ -1,6 +1,7 @@
 import { IconTecnology, Tecnologys } from "src/app/interfaces/works.interface";
 
-const { HTML, CSS, JS, TS, ANGULAR, BOOTSTRAP, SASS, JAVA, NEST, NODE, EXPRESS, PYTHON, TAILWIND, POSTGRESQL, DOCKER } = IconTecnology;
+const { HTML, CSS, JS, TS, ANGULAR, BOOTSTRAP, SASS, JAVA, NEST, NODE,
+  EXPRESS, PYTHON, TAILWIND, POSTGRESQL, DOCKER, DOTNET } = IconTecnology;
 
 export const _html: Tecnologys = {
   name: 'Html',
@@ -68,3 +69,7 @@ export const _docker: Tecnologys = {
   name: 'Docker',
   classIcon: DOCKER,
 };
+export const _dotnet: Tecnologys = {
+  name: '.Net Core',
+  classIcon: DOTNET
+}

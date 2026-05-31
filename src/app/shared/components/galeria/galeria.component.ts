@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Wokrs } from 'src/app/interfaces';
+import { Works } from 'src/app/interfaces';
 
 @Component({
   selector: 'c-galeria',
@@ -12,6 +12,6 @@ export class GaleriaComponent implements OnInit {
   }
 
   @Input()
-  public proyect!: Wokrs;
+  public proyect!: Works;
 
 }

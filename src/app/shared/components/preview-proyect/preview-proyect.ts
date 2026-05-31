@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { Wokrs } from 'src/app/interfaces';
+import { Works } from 'src/app/interfaces';
 
 @Component({
   selector: 'c-preview-proyect',
@@ -9,16 +9,19 @@ import { Wokrs } from 'src/app/interfaces';
 })
 export class PreviewProyectComponent {
 
-  private _proyect!: Wokrs;
+  private _proyect!: Works;
   public safeHref!: SafeResourceUrl;
 
   @Input()
-  set proyect(value: Wokrs) {
+  set proyect(value: Works) {
     this._proyect = value;
     // sanitize once when the input changes, avoids creating a new object on every CD cycle
-    this.safeHref = this.sanitizer.bypassSecurityTrustResourceUrl(value.hrefDemo);
+    this.safeHref = (value.hrefDemo)
+      ? this.sanitizer.bypassSecurityTrustResourceUrl(value.hrefDemo)
+      : '';
   }
-  get proyect(): Wokrs {
+
+  get proyect(): Works {
     return this._proyect;
   }
 

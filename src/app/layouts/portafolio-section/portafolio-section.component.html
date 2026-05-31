@@ -25,10 +25,12 @@
             <div *ngFor="let proyect of listProyects" class="contain-galery">
                 <c-galeria [proyect]="proyect"></c-galeria>
             </div>
-            <!-- <div class="container">
-                <app-pagination [list]="listProyects" [limit]="8"
-                (onChangeOffset)="onChangeOffset($event)"></app-pagination>
-            </div> -->
+            <div class="container">
+                <app-pagination [count]="pagination.count" [limit]="pagination.limit"
+                (onChangeOffset)="onChangeOffset($event)">
+            
+                </app-pagination>
+            </div>
         </div>
 
         <ng-template #inProgress>

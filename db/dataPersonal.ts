@@ -7,4 +7,5 @@ export const UrlPersonals = {
   whatsApp : `https://wa.me/${PHONE}`,
   linkEdin : 'https://www.linkedin.com/in/miguel-cuellar-013a96258/',
   gitHub   : `https://github.com/${NAMEGITHUB}`,
+  itch     : `https://miguelacs23.itch.io`,
 }

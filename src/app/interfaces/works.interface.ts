@@ -15,7 +15,8 @@ export enum IconTecnology {
   "PYTHON" = `devicon-python-plain-wordmark colored ${sizeIcon}`,
   "TAILWIND" = `devicon-tailwindcss-original colored ${sizeIcon}`,
   "POSTGRESQL" = `devicon-postgresql-plain-wordmark colored ${sizeIcon}`,
-  "DOCKER" = `devicon-docker-plain-wordmark colored ${sizeIcon}`
+  "DOCKER" = `devicon-docker-plain-wordmark colored ${sizeIcon}`,
+  "DOTNET" = `devicon-dotnetcore-plain colored ${sizeIcon}`,
 }
 
 export type CategoryWork = 'All' | 'Game' | 'Apis' | 'Crud' | 'Style' | 'Otros' | 'Consola' | 'inProgress';
@@ -26,7 +27,7 @@ export interface Tecnologys {
   color?: string;
 }
 
-export interface Wokrs {
+export interface Works {
   name          : string;
   srcImg        : string;
   hrefCode      : string;

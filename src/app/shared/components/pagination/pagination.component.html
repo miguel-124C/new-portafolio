@@ -1,6 +1,6 @@
-<div *ngIf=" list.length > limit " class="contain-pagination">
+<div *ngIf=" count > limit " class="contain-pagination">
     <div>
-        <button class="btn-pag" (click)="changeOffset( -1 )">
+        <button class="btn-pag" (click)="changeOffset( -1 )" [disabled]="offset() <= 0">
             <<
         </button>
     </div>
@@ -11,7 +11,7 @@
         </button>
     </div>
     <div>
-        <button class="btn-pag" (click)="changeOffset( +1 )">
+        <button class="btn-pag" (click)="changeOffset( +1 )" [disabled]="offset() >= totalPagination - 1">
             >>
         </button>
     </div>

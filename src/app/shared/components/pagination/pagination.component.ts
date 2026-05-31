@@ -1,4 +1,4 @@
-import { Component, computed, EventEmitter, Input,
+import { Component, EventEmitter, Input,
   OnChanges, Output, signal, SimpleChanges } from '@angular/core';
 
 @Component({
@@ -8,17 +8,18 @@ import { Component, computed, EventEmitter, Input,
 })
 export class PaginationComponent implements OnChanges {
   
-  @Input({required: true}) list: object[] = [];
+  @Input({required: true}) count: number = 0;
   @Input() limit: number = 10;
   @Output() onChangeOffset: EventEmitter<number> = new EventEmitter();
   
   public offset = signal(0);
   public numbers: number[] = [];
+  public totalPagination = 0;
   
   ngOnChanges(changes: SimpleChanges): void {
     this.numbers = [];
-    const totalPagination = Math.ceil(this.list.length / this.limit);
-    for (let i = 0; i < totalPagination; i++) {
+    this.totalPagination = Math.ceil(this.count / this.limit);
+    for (let i = 0; i < this.totalPagination; i++) {
       this.numbers.push(i);
     }
   }
